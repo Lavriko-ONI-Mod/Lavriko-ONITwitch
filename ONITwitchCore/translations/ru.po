@@ -5,13 +5,13 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: de\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Application: Oxygen Not IncludedPOT Version: 2.0\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. ONITwitch.STRINGS.BUILDINGS.PREFABS.ONITWITCH.POCKETDIMENSIONEXTERIORPORTALCONFIG.DESC
 msgctxt ""
@@ -25,14 +25,14 @@ msgctxt ""
 "ONITwitch.STRINGS.BUILDINGS.PREFABS.ONITWITCH."
 "POCKETDIMENSIONEXTERIORPORTALCONFIG.EFFECT"
 msgid "A portal to an unknown dimension."
-msgstr "Ein Portal in eine unbekannte Dimension."
+msgstr "Портал в неизвестное измерение."
 
 #. ONITwitch.STRINGS.BUILDINGS.PREFABS.ONITWITCH.POCKETDIMENSIONEXTERIORPORTALCONFIG.NAME
 msgctxt ""
 "ONITwitch.STRINGS.BUILDINGS.PREFABS.ONITWITCH."
 "POCKETDIMENSIONEXTERIORPORTALCONFIG.NAME"
 msgid "Pocket Dimension Portal"
-msgstr "Taschendimensionsportal"
+msgstr "Портал в неизвестное измерение"
 
 #. ONITwitch.STRINGS.BUILDINGS.PREFABS.ONITWITCH.POCKETDIMENSIONINTERIORPORTALCONFIG.DESC
 msgctxt ""
@@ -46,123 +46,121 @@ msgctxt ""
 "ONITwitch.STRINGS.BUILDINGS.PREFABS.ONITWITCH."
 "POCKETDIMENSIONINTERIORPORTALCONFIG.EFFECT"
 msgid "A portal that returns your duplicants back where they came from."
-msgstr ""
-"Ein Portal, welches den Duplikanten einen Rückweg zu ihrem Ursprungsort "
-"ermöglicht."
+msgstr "Портал, который возвращает ваших дубликатов туда, откуда они пришли."
 
 #. ONITwitch.STRINGS.BUILDINGS.PREFABS.ONITWITCH.POCKETDIMENSIONINTERIORPORTALCONFIG.NAME
 msgctxt ""
 "ONITwitch.STRINGS.BUILDINGS.PREFABS.ONITWITCH."
 "POCKETDIMENSIONINTERIORPORTALCONFIG.NAME"
 msgid "Return Portal"
-msgstr "Rückreiseportal"
+msgstr "Обратный портал"
 
 #. ONITwitch.STRINGS.CREATURES.SPECIES.ONITWITCH.GLITTERPUFT.DESC
 msgctxt "ONITwitch.STRINGS.CREATURES.SPECIES.ONITWITCH.GLITTERPUFT.DESC"
 msgid "A extraordinarily colorful and very pretty Puft"
-msgstr "Ein ziemlich bunter und sehr hübscher Puft"
+msgstr "Невероятно цветной и очень милый Пуф"
 
 #. ONITwitch.STRINGS.CREATURES.SPECIES.ONITWITCH.GLITTERPUFT.NAME
 msgctxt "ONITwitch.STRINGS.CREATURES.SPECIES.ONITWITCH.GLITTERPUFT.NAME"
 msgid "Glitter Puft"
-msgstr "Glitzerpuft"
+msgstr "Блестящий Пуф"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.ATHLETICS_DOWN.NAME
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.ATHLETICS_DOWN.NAME"
 msgid "Athletics Down"
-msgstr "Athletik runter"
+msgstr "Уменьшение атлетики"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.ATHLETICS_DOWN.TOOLTIP
 msgctxt ""
 "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.ATHLETICS_DOWN.TOOLTIP"
 msgid "Caused by Twitch Chat"
-msgstr "Verursacht durch den Twitch-Chat"
+msgstr "Вызвано Twitch-чатом"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.ATHLETICS_UP.NAME
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.ATHLETICS_UP.NAME"
 msgid "Athletics Up"
-msgstr "Athletik hoch"
+msgstr "Увеличение атлетики"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.ATHLETICS_UP.TOOLTIP
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.ATHLETICS_UP.TOOLTIP"
 msgid "Caused by Twitch Chat"
-msgstr "Verursacht durch den Twitch-Chat"
+msgstr "Вызвано Twitch-чатом"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.CONSTRUCTION_DOWN.NAME
 msgctxt ""
 "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.CONSTRUCTION_DOWN.NAME"
 msgid "Construction Down"
-msgstr "Bauen runter"
+msgstr "Строительство -5 на 2 цикла"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.CONSTRUCTION_DOWN.TOOLTIP
 msgctxt ""
 "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.CONSTRUCTION_DOWN.TOOLTIP"
 msgid "Caused by Twitch Chat"
-msgstr "Verursacht durch den Twitch-Chat"
+msgstr "Вызвано Twitch-чатом"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.CONSTRUCTION_UP.NAME
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.CONSTRUCTION_UP.NAME"
 msgid "Construction Up"
-msgstr "Bauen hoch"
+msgstr "Строительство +5 на 2 цикла"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.CONSTRUCTION_UP.TOOLTIP
 msgctxt ""
 "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.CONSTRUCTION_UP.TOOLTIP"
 msgid "Caused by Twitch Chat"
-msgstr "Verursacht durch den Twitch-Chat"
+msgstr "Вызвано Twitch-чатом"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.EXCAVATION_DOWN.NAME
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.EXCAVATION_DOWN.NAME"
 msgid "Excavation Down"
-msgstr "Graben runter"
+msgstr "Копание -5 на 2 цикла"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.EXCAVATION_DOWN.TOOLTIP
 msgctxt ""
 "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.EXCAVATION_DOWN.TOOLTIP"
 msgid "Caused by Twitch Chat"
-msgstr "Verursacht durch den Twitch-Chat"
+msgstr "Вызвано Twitch-чатом"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.EXCAVATION_UP.NAME
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.EXCAVATION_UP.NAME"
 msgid "Excavation Up"
-msgstr "Graben hoch"
+msgstr "Копание +5 на 2 цикла"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.EXCAVATION_UP.TOOLTIP
 msgctxt ""
 "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.EXCAVATION_UP.TOOLTIP"
 msgid "Caused by Twitch Chat"
-msgstr "Verursacht durch den Twitch-Chat"
+msgstr "Вызвано Twitch-чатом"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.SLEEPY.NAME
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.SLEEPY.NAME"
 msgid "Incredibly Sleepy"
-msgstr "Unglaublich schläfrig"
+msgstr "Все дубля спят половину цикла"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.SLEEPY.TOOLTIP
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.SLEEPY.TOOLTIP"
 msgid "Incredibly Exhausted"
-msgstr "Unglaublich erschöpft"
+msgstr "Снижение атрибутов"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.STRENGTH_DOWN.NAME
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.STRENGTH_DOWN.NAME"
 msgid "Strength Down"
-msgstr "Stärke runter"
+msgstr "Сила -5 на 2 цикла"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.STRENGTH_DOWN.TOOLTIP
 msgctxt ""
 "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.STRENGTH_DOWN.TOOLTIP"
 msgid "Caused by Twitch Chat"
-msgstr "Verursacht durch den Twitch-Chat"
+msgstr "Вызвано Twitch-чатом"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.STRENGTH_UP.NAME
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.STRENGTH_UP.NAME"
 msgid "Strength Up"
-msgstr "Stärke hoch"
+msgstr "Сила +5 на 2 цикла"
 
 #. ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.STRENGTH_UP.TOOLTIP
 msgctxt "ONITwitch.STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.STRENGTH_UP.TOOLTIP"
 msgid "Caused by Twitch Chat"
-msgstr "Verursacht durch den Twitch-Chat"
+msgstr "Вызвано Twitch-чатом"
 
 #. ONITwitch.STRINGS.ELEMENTS.ONITWITCHINDESTRUCTIBLEELEMENT.DESC
 msgctxt "ONITwitch.STRINGS.ELEMENTS.ONITWITCHINDESTRUCTIBLEELEMENT.DESC"
@@ -171,14 +169,14 @@ msgid ""
 "\n"
 "It cannot be excavated by any Duplicant mining tool."
 msgstr ""
-"(Nt) Neutronium ist ein mysteriöses und extrem widerstandsfähiges Element.\n"
+"(Nt) Нейтроний - загадочный и чрезвычайно живучий элемент.\n"
 "\n"
-"Es kann mit keinem Werkzeug der Duplikanten abgebaut werden."
+"Его нельзя добыть ни одним горным инструментом Дубликантов."
 
 #. ONITwitch.STRINGS.ELEMENTS.ONITWITCHINDESTRUCTIBLEELEMENT.NAME
 msgctxt "ONITwitch.STRINGS.ELEMENTS.ONITWITCHINDESTRUCTIBLEELEMENT.NAME"
 msgid "<link=\"UNOBTANIUM\">Neutrollium</link>"
-msgstr "<link=\"UNOBTANIUM\">Neutrollium</link>"
+msgstr "<link=\"UNOBTANIUM\">Нейтроний</link>"
 
 #. ONITwitch.STRINGS.ITEMS.FOOD.ONITWITCH.GLITTERMEATCONFIG.DESC
 msgctxt "ONITwitch.STRINGS.ITEMS.FOOD.ONITWITCH.GLITTERMEATCONFIG.DESC"
@@ -187,24 +185,24 @@ msgid ""
 "\n"
 "...It's best not to think about where it came from..."
 msgstr ""
-"Ein Stück Fleisch mit einem verblassten Glitzern,\n"
+"Кусок мяса, который тускло блестит.\n"
 "\n"
-"...besser nicht darüber nachdenken wo das herkommt..."
+"...Лучше не думать о том, откуда он взялся..."
 
 #. ONITwitch.STRINGS.ITEMS.FOOD.ONITWITCH.GLITTERMEATCONFIG.NAME
 msgctxt "ONITwitch.STRINGS.ITEMS.FOOD.ONITWITCH.GLITTERMEATCONFIG.NAME"
 msgid "Glitter Meat"
-msgstr "Glitzerfleisch"
+msgstr "Блестящее мясо"
 
 #. ONITwitch.STRINGS.ITEMS.ONITWITCH.DEV_POCKET_DIMENSION_GENERATOR.DESC
 msgctxt "ONITwitch.STRINGS.ITEMS.ONITWITCH.DEV_POCKET_DIMENSION_GENERATOR.DESC"
 msgid "Generates a Pocket Dimension"
-msgstr "Erzeugt eine Taschendimension"
+msgstr "Открыть портал в другое измерение на время (они разные)"
 
 #. ONITwitch.STRINGS.ITEMS.ONITWITCH.DEV_POCKET_DIMENSION_GENERATOR.NAME
 msgctxt "ONITwitch.STRINGS.ITEMS.ONITWITCH.DEV_POCKET_DIMENSION_GENERATOR.NAME"
 msgid "Pocket Dimension Generator"
-msgstr "Taschendimensionsgenerator"
+msgstr "Генератор портала измерений"
 
 #. ONITwitch.STRINGS.ITEMS.ONITWITCH.SURPRISEBOXCONFIG.DESC
 msgctxt "ONITwitch.STRINGS.ITEMS.ONITWITCH.SURPRISEBOXCONFIG.DESC"
@@ -214,249 +212,251 @@ msgstr ""
 #. ONITwitch.STRINGS.ITEMS.ONITWITCH.SURPRISEBOXCONFIG.EFFECT
 msgctxt "ONITwitch.STRINGS.ITEMS.ONITWITCH.SURPRISEBOXCONFIG.EFFECT"
 msgid "Deconstruct for a surprise!"
-msgstr "Abbauen für eine Überraschung!"
+msgstr "Разбери для сюрприза"
 
 #. ONITwitch.STRINGS.ITEMS.ONITWITCH.SURPRISEBOXCONFIG.NAME
 msgctxt "ONITwitch.STRINGS.ITEMS.ONITWITCH.SURPRISEBOXCONFIG.NAME"
 msgid "Surprise Box"
-msgstr "Überraschungsbox"
+msgstr "Коробка с сюрпризом"
 
 #. ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.CLOSING
 msgctxt "ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.CLOSING"
 msgid "Low Time Remaining"
-msgstr "Wenig Zeit verbleibend"
+msgstr "Осталось мало времени"
 
 #. ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.CRITERION_NAME
 msgctxt ""
 "ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.CRITERION_NAME"
 msgid "Pocket Dimension closing soon"
-msgstr "Taschendimension schließt sich bald"
+msgstr "Портал скоро закроется"
 
 #. ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.DIAGNOSTIC_NAME
 msgctxt ""
 "ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.DIAGNOSTIC_NAME"
 msgid "Time Remaining"
-msgstr "Verbleibende Zeit"
+msgstr "Оставшееся время"
 
 #. ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.ERROR
 msgctxt "ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.ERROR"
 msgid "Error"
-msgstr "Fehler"
+msgstr "Ошибка"
 
 #. ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.NORMAL
 msgctxt "ONITwitch.STRINGS.ONITWITCH.DIAGNOSTICS.DIMENSION_CLOSING.NORMAL"
 msgid "Dimension Normal"
-msgstr "Dimension Normal"
+msgstr "Измерение нормально"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_ATHLETICS_DOWN
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_ATHLETICS_DOWN"
 msgid "Athletics Down"
-msgstr "Athletik runter"
+msgstr "Физическая форма -5 на 2 цикла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_ATHLETICS_UP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_ATHLETICS_UP"
 msgid "Athletics Up"
-msgstr "Athletik hoch"
+msgstr "Физическая форма +5 на 2 цикла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_CONSTRUCTION_DOWN
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_CONSTRUCTION_DOWN"
 msgid "Construction Down"
-msgstr "Bauen runter"
+msgstr "Строительство -5 на 2 цикла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_CONSTRUCTION_UP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_CONSTRUCTION_UP"
 msgid "Construction Up"
-msgstr "Bauen hoch"
+msgstr "Строительство +5 на 2 цикла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_EXCAVATION_DOWN
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_EXCAVATION_DOWN"
 msgid "Excavation Down"
-msgstr "Graben runter"
+msgstr "Копание -5 на 2 цикла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_EXCAVATION_UP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_EXCAVATION_UP"
 msgid "Excavation Up"
-msgstr "Graben hoch"
+msgstr "Копание +5 на 2 цикла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_STRENGTH_DOWN
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_STRENGTH_DOWN"
 msgid "Strength Down"
-msgstr "Stärke runter"
+msgstr "Сила -5 на 2 цикла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_STRENGTH_UP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ATTRIBUTE_STRENGTH_UP"
 msgid "Strength Up"
-msgstr "Stärke hoch"
+msgstr "Сила +5 на 2 цикла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.BANSHEE_WAIL
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.BANSHEE_WAIL"
 msgid "Banshee Wail"
-msgstr "Schreikrampf"
+msgstr ""
+"Дубль издает \"Банши\" крик. Стресс всех дублей поднимается на +10% на 0,5 "
+"цикла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.BEDROOM_SNOW
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.BEDROOM_SNOW"
 msgid "Snowy Bedrooms"
-msgstr "Eingeschneite Schlafzimmer"
+msgstr "Все кровати покрываются снегом"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.BEDROOMS_SLIME
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.BEDROOMS_SLIME"
 msgid "Slimy Bedrooms"
-msgstr "Schleimige Schlafzimmer"
+msgstr "Все кровати покрываются слизью"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ECLIPSE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ECLIPSE"
 msgid "Eclipse"
-msgstr "Sonnenfinsternis"
+msgstr "Наступает ночь на 5 минут"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_COMMON
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_COMMON"
 msgid "Spawn Common Element"
-msgstr "Erzeuge häufiges Element"
+msgstr "Заспавнить блок обычного элемента"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_DEADLY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_DEADLY"
 msgid "Spawn Deadly Element"
-msgstr "Erzeuge tödliches Element"
+msgstr "Заспавнить раскаленный элемент, но вокруг изоляция"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_EXOTIC
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_EXOTIC"
 msgid "Spawn Exotic Element"
-msgstr "Erzeuge exotisches Element"
+msgstr "Заспавнить блок экзотического элемента"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_GAS
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_GAS"
 msgid "Spawn Gas"
-msgstr "Erzeuge Gas"
+msgstr "Заспавнить 50кг газа"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_LIQUID
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_LIQUID"
 msgid "Spawn Liquid"
-msgstr "Erzeuge Flüssigkeit"
+msgstr "Заспавнить жидкость (водород/стекло и тд)"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_METAL
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ELEMENT_GROUP_METAL"
 msgid "Spawn Metal"
-msgstr "Erzeuge Metall"
+msgstr "Заспавнить блок металла"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.FART
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.FART"
 msgid "Fart"
-msgstr "Furz"
+msgstr "Каждый дубль \"пукает\" 25кг природного газа"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_ETHANOL
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_ETHANOL"
 msgid "Ethanol Flood"
-msgstr "Ethanolflut"
+msgstr "Заспавнить 80т Этанола"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_GOLD
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_GOLD"
 msgid "Gold Rain"
-msgstr "Goldener Regen"
+msgstr "Заспавнить 20т расплавленного золота 1730 градусов"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_LAVA
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_LAVA"
 msgid "Lava Flood"
-msgstr "Lavaflut"
+msgstr "Заспавнить 10т Магмы 1730 градусов"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_NUCLEAR_WASTE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_NUCLEAR_WASTE"
 msgid "Nuclear Waste Disposal Accident"
-msgstr "Unfall bei der Nuklearabfallentsorgung"
+msgstr "Заспавнить 40т ядерных отходов 130 градусов"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_OIL
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_OIL"
 msgid "Oil Flood"
-msgstr "Ölflut"
+msgstr "Заспавнить 75т неочищенной нефти 77 градусов"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_POLLUTED_WATER
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_POLLUTED_WATER"
 msgid "Polluted Water Flood"
-msgstr "Schmutzwasserflut"
+msgstr "Заспавнить 80т загрязненной воды 27 градусов"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_WATER
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.FLOOD_WATER"
 msgid "Water Flood"
-msgstr "Flut"
+msgstr "Заспавнить 80т чистой воды 27 градусов"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.GEYSER_MODIFICATION
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.GEYSER_MODIFICATION"
 msgid "Tune Geyser"
-msgstr "Verstärke Geysir"
+msgstr "На 25 циклов прокачивает случайный гейзер"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.GLOBAL_WARMING
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.GLOBAL_WARMING"
 msgid "Global Warming"
-msgstr "Klimaerwärmung"
+msgstr "Глобальное потепление"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.ICE_AGE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.ICE_AGE"
 msgid "Ice Age"
-msgstr "Eiszeit"
+msgstr "Ледниковый период"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.KILL_DUPE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.KILL_DUPE"
 msgid "Kill Duplicant"
-msgstr "Ermorde Duplikanten"
+msgstr "Убить дубликанта"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.MORPH_CRITTERS
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.MORPH_CRITTERS"
 msgid "Morph Critters"
-msgstr "Mutiere Tiere"
+msgstr "Поменять морфу всех существ"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.PARTY_TIME
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.PARTY_TIME"
 msgid "Party Time"
-msgstr "Party-Zeit"
+msgstr "Вечеринка!"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.PEE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.PEE"
 msgid "Gold Rain"
-msgstr "Goldener Regen"
+msgstr "Обоссатушки"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.POCKET_DIMENSION
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.POCKET_DIMENSION"
 msgid "Spawn Pocket Dimension"
-msgstr "Erzeuge Taschendimension"
+msgstr "Открыть портал в другое измерение"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.POISON
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.POISON"
 msgid "Poison Duplicants"
-msgstr "Vergifte Duplikanten"
+msgstr "Отравить всех дублей"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.POOPSPLOSION
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.POOPSPLOSION"
 msgid "Poopsplosion"
-msgstr "Kacksplosion"
+msgstr "Все туалеты забиваются загрязненной землей"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_BEE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_BEE"
 msgid "Bee Infestation"
-msgstr "Bienenbefall"
+msgstr "Заспавнить Бета пчел"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_DIAMOND
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_DIAMOND"
 msgid "Diamond Rain"
-msgstr "Diamantregen"
+msgstr "Алмазный дождь"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_GOLD
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_GOLD"
 msgid "Gold Rain"
-msgstr "Goldener Regen"
+msgstr "Золотой дождь"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_MORB_AMORBUS
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_MORB_AMORBUS"
 msgid "Amorbus Rain"
-msgstr "Amorbusregen"
+msgstr "Amorbus Rain"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_MORB_NORMAL
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_MORB_NORMAL"
 msgid "Morbs!!!"
-msgstr "Morbinvasion!!!!"
+msgstr "Дождь из сглазиков"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_PACU_NORMAL
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_PACU_NORMAL"
 msgid "Pacu Rain"
-msgstr "Pacuregen"
+msgstr "Дождь из паку"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_PACU_PACUWU
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_PACU_PACUWU"
@@ -466,107 +466,107 @@ msgstr "PacUwU-Regen 🐠👉👈"
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_SLICKSTER
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.RAIN_PREFAB_SLICKSTER"
 msgid "Slickster Rain"
-msgstr "Slicksterregen"
+msgstr "Дождь из скользецов"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.REDUCE_OXYGEN
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.REDUCE_OXYGEN"
 msgid "Un-include Oxygen"
-msgstr "Dünne Luft"
+msgstr "Снизить кислород на 80 процентов"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.RESEARCH_TECH
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.RESEARCH_TECH"
 msgid "Research Technology"
-msgstr "Schalte Technologie frei"
+msgstr "Изучить технологию"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SKILL_POINTS
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SKILL_POINTS"
 msgid "Skilling Spree"
-msgstr "Qualifizierungsoffensive"
+msgstr "Случайный дубль получает одно очко навыка"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SLEEPY_DUPES
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SLEEPY_DUPES"
 msgid "Sleepy Dupes"
-msgstr "Schläfrige Duplikanten"
+msgstr "Город засыпает"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_ATMO_SUIT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_ATMO_SUIT"
 msgid "Spawn Atmo Suit"
-msgstr "Erzeuge Schutzanzug"
+msgstr "Создать Атмокостюм"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_CRAB
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_CRAB"
 msgid "Spawn Pokeshell"
-msgstr "Erzeuge Pokepanzer"
+msgstr "Создать крабушка"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_DUPE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_DUPE"
 msgid "Spawn Duplicant"
-msgstr "Erzeuge Duplikanten"
+msgstr "Создать дубликанта"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_GLITTER_PUFT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_GLITTER_PUFT"
 msgid "Spawn Glitter Puft"
-msgstr "Erzeuge Glitzerpuft"
+msgstr "Создать блестящего Пуфа"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_MOO_COMET
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_MOO_COMET"
 msgid "Spawn Gassy Moo Comet"
-msgstr "Erzeuge Gassy Moo-teorit"
+msgstr "Создать Му-Му"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_SNAZZY_SUIT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_SNAZZY_SUIT"
 msgid "Spawn Snazzy Suit"
-msgstr "Erzeuge schicken Anzug"
+msgstr "Создать шикарный костюм"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_VACILLATOR_CHARGE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SPAWN_VACILLATOR_CHARGE"
 msgid "Spawn Vacillator Charge"
-msgstr "Erzeuge Oszillator-Aufladung"
+msgstr "Создать зарядку калибратора"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SPICE_FOOD
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SPICE_FOOD"
 msgid "Spice Food"
-msgstr "Extra Gewürze"
+msgstr "Острая еда"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.STRESS_ADD
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.STRESS_ADD"
 msgid "Add Stress"
-msgstr "Stress hoch"
+msgstr "Добавить стресс"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.STRESS_REMOVE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.STRESS_REMOVE"
 msgid "Remove Stress"
-msgstr "Stress runter"
+msgstr "Убрать стресс"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SURPRISE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SURPRISE"
 msgid "Surprise!!!"
-msgstr "Überraschung!!!"
+msgstr "Сюрприз!!!"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.SURPRISE_BOX
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.SURPRISE_BOX"
 msgid "Surprise Box"
-msgstr "Überraschungsbox"
+msgstr "Коробка с сюрпризом"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.TILE_TEMP_DOWN
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.TILE_TEMP_DOWN"
 msgid "Icy Floors"
-msgstr "Eisige Korridore"
+msgstr "Ледяной пол"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.TILE_TEMP_UP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.TILE_TEMP_UP"
 msgid "The Floor is Lava"
-msgstr "Der Boden ist Lava"
+msgstr "Пол это Лава"
 
 #. ONITwitch.STRINGS.ONITWITCH.EVENTS.UNINSULATE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.EVENTS.UNINSULATE"
 msgid "Uninsulate Tiles"
-msgstr "Isolierungsklau"
+msgstr "Заменяет случайные теплоизолированные клетки на обычные"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.BANSHEE_WAIL.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.BANSHEE_WAIL.BODY"
 msgid "All of your duplicants are releasing their urge to scream"
-msgstr "Alle deine Duplikanten geben ihrem Drang zu Schreien nach"
+msgstr "Все дубликанты хотят \"поскримить\""
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.BANSHEE_WAIL.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.BANSHEE_WAIL.TITLE"
@@ -576,332 +576,329 @@ msgstr "Schreikrampf"
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.ECLIPSE.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.ECLIPSE.BODY"
 msgid "A long darkness has enveloped the colony"
-msgstr "Eine lange Dunkelheit hat die Kolonie eingehüllt"
+msgstr "Длинная ночь опустилась на эту колонию"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.ECLIPSE.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.ECLIPSE.TITLE"
 msgid "Eclipse"
-msgstr "Sonnenfinsternis"
+msgstr "Затмение"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.EFFECT.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.EFFECT.BODY_FORMAT"
 msgid "All dupes have had the {0} effect applied"
-msgstr "Alle Duplikanten haben den Effekt \"{0}\" erhalten"
+msgstr "Ко всем дубликантам применен \"{0}\" эффект"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.EFFECT.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.EFFECT.TITLE"
 msgid "Effect Applied"
-msgstr "Effekt angewandt"
+msgstr "Эффект применен"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.ELEMENT_GROUP.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.ELEMENT_GROUP.BODY_FORMAT"
 msgid "A chunk of {0} has appeared"
-msgstr "Ein bisschen {0} ist erschienen"
+msgstr "Кусок {0} создан"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.ELEMENT_GROUP.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.ELEMENT_GROUP.TITLE"
 msgid "Element Created"
-msgstr "Element Erschaffen"
+msgstr "Элемент создан"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.END_VOTE_NO_OPTIONS.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.END_VOTE_NO_OPTIONS.BODY"
 msgid "No events were voted for"
-msgstr "Es wurde für kein Event abgestimmt"
+msgstr "Никто не проголосовал"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.END_VOTE_NO_OPTIONS.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.END_VOTE_NO_OPTIONS.TITLE"
 msgid "Vote Complete"
-msgstr "Abstimmung abgeschlossen"
+msgstr "Голосование завершено"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.FART.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.FART.BODY"
 msgid "All of your duplicants have farted. What was in that Frost Burger?"
 msgstr ""
-"Alle deine Duplikanten haben gefurzt.\n"
-"Was war wohl in dem Frostburger?"
+"Все дубли перданули. \n"
+"Хватит жрать грязевые батончики и пищевик!"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.FART.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.FART.TITLE"
 msgid "Fart"
-msgstr "Furz"
+msgstr "Пукнуть"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.FILL_BEDROOMS.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.FILL_BEDROOMS.BODY_FORMAT"
 msgid "{0} was placed in every bedroom"
-msgstr "{0} wurde in jedem Schlafzimmer platziert"
+msgstr "{0} появился на каждой кровати"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.FILL_BEDROOMS.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.FILL_BEDROOMS.TITLE"
 msgid "Bedrooms Bombed"
-msgstr "Bombardierte Schlafzimmer"
+msgstr "Спальни заминированы (взорваны)"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.FLOOD.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.FLOOD.BODY_FORMAT"
 msgid "A flood of {0} was spawned"
-msgstr "Eine {0}flut wurde erzeugt"
+msgstr "Потоп из {0} прибыл"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.FLOOD.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.FLOOD.TITLE"
 msgid "Flood"
-msgstr "Flut"
+msgstr "Потоп"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.GEYSER_MODIFICATION.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.GEYSER_MODIFICATION.BODY_FORMAT"
 msgid "Geyser {0} is temporarily tuned"
-msgstr "{0} ist temporär verstärkt"
+msgstr "Гейзер {0}  прошит"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.GEYSER_MODIFICATION.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.GEYSER_MODIFICATION.TITLE"
 msgid "Geyser Modified"
-msgstr "Geysir modifiziert"
+msgstr "Гейзер модифицирован"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.GLOBAL_WARMING.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.GLOBAL_WARMING.BODY_FORMAT"
 msgid "Temperatures on {0} are on the rise"
-msgstr "Steigende Temperaturen auf {0}"
+msgstr "Температура {0} повышается"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.GLOBAL_WARMING.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.GLOBAL_WARMING.TITLE"
 msgid "Global Warming"
-msgstr "Klimawandel"
+msgstr "Тепленькая пошла"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.ICE_AGE.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.ICE_AGE.BODY_FORMAT"
 msgid "All liquids on {0} have frozen"
-msgstr "Alle Flüssigkeiten auf {0} sind eingefroren"
+msgstr "Все жидкости {0} заморожены"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.ICE_AGE.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.ICE_AGE.TITLE"
 msgid "Ice Age"
-msgstr "Eiszeit"
+msgstr "Ледниковый период"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.KILL_DUPE.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.KILL_DUPE.BODY_FORMAT"
 msgid "{0} died :("
-msgstr "{0} ist gestorben :("
+msgstr "{0} умер =("
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.KILL_DUPE.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.KILL_DUPE.TITLE"
 msgid "Duplicant Killed"
-msgstr "Duplikant ermordet"
+msgstr "Дубликант убит"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.MORPH.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.MORPH.BODY"
 msgid "All critters have been morphed"
-msgstr "Alle Tiere wurden mutiert"
+msgstr "Все существа поменяли морфу"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.MORPH.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.MORPH.TITLE"
 msgid "Critters Morphed"
-msgstr "Tiermutationen"
+msgstr "Существа изменены"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.PARTY_TIME.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.PARTY_TIME.BODY"
 msgid "The dupes are throwing a rainbow party!"
-msgstr "Die Duplikanten feiern eine Regenbogenparty!"
+msgstr "Дубликанты устроили вечеринку!"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.PARTY_TIME.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.PARTY_TIME.TITLE"
 msgid "Party Time!"
-msgstr "Partyzeit!"
+msgstr "Вечеринка!"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.PEE.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.PEE.BODY"
 msgid "All duplicants suddenly feel the need to relieve themselves"
-msgstr "Alle Duplikanten müssen sich plötzlich erleichtern"
+msgstr "Все дубликанты сделали загрязненную воду под собой"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.PEE.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.PEE.TITLE"
 msgid "Pee Everywhere"
-msgstr "Pipi überall"
+msgstr "Опять вытирать!"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.POCKET_DIMENSION.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.POCKET_DIMENSION.BODY"
 msgid "A portal to a pocket dimension opened"
-msgstr "Ein Portal zu einer Taschendimension halt sich geöffnet"
+msgstr "Lavriko, го в портал, я создал"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.POCKET_DIMENSION.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.POCKET_DIMENSION.TITLE"
 msgid "Pocket Dimension"
-msgstr "Taschendimension"
+msgstr "Генератор портала измерений"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.POISON.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.POISON.BODY"
 msgid "All duplicants are poisoned and will take damage over time"
-msgstr ""
-"Alle Duplikanten wurden vergiftet und werden über Zeit Schaden erleiden"
+msgstr "Все дубликаты отравлены и со временем будут получать урон"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.POISON.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.POISON.TITLE"
 msgid "Poisoned Dupes"
-msgstr "Vergiftete Duplikanten"
+msgstr "Дубликанты отравлены"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.POOPSPLOSION.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.POOPSPLOSION.BODY"
 msgid "All toilets have exploded with poop"
-msgstr "Alle Toiletten hatten eine Kackeexplosion"
+msgstr "Все туалеты в земляных элементалях"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.POOPSPLOSION.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.POOPSPLOSION.TITLE"
 msgid "Poopsplosion"
-msgstr "Kacksplosion"
+msgstr "Все туалеты забиваются загрязненной землей"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.RAIN_PREFAB.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.RAIN_PREFAB.BODY_FORMAT"
 msgid "A rain of {0} is starting"
-msgstr "Ein {0}regen startet"
+msgstr "Дождь из {0} начался"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.RAIN_PREFAB.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.RAIN_PREFAB.TITLE"
 msgid "Rain"
-msgstr "Regen"
+msgstr "Дождь"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.REDUCE_OXYGEN.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.REDUCE_OXYGEN.BODY_FORMAT"
 msgid "The mass of all breathable elements was reduced by {0}%"
-msgstr "Die Masse aller atembarer Elemente wurde um {0}% reduziert"
+msgstr "Уровень кислорода снижен на {0}%"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.REDUCE_OXYGEN.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.REDUCE_OXYGEN.TITLE"
 msgid "Oxygen Reduced"
-msgstr "Sauerstoff reduziert"
+msgstr "Кислорода.нет"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.RESEARCH_TECH.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.RESEARCH_TECH.BODY_FORMAT"
 msgid "{0} has been researched"
-msgstr "{0} wurde erforscht"
+msgstr "{0} была исследована"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.RESEARCH_TECH.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.RESEARCH_TECH.TITLE"
 msgid "Technology Researched"
-msgstr "Technologie erforscht"
+msgstr "Технология исследована"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SKILLS.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SKILLS.BODY"
 msgid "Some duplicants have been inspired and instantly gained a skill point"
-msgstr ""
-"Einige Duplikanten wurden inspiriert und haben einen Fertigkeitspunkt "
-"erhalten"
+msgstr "Какой-то дублик получил очко.. навыка"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SKILLS.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SKILLS.TITLE"
 msgid "Skilling Spree"
-msgstr "Qualifizierungsoffensive"
+msgstr "Случайный дубль получает одно очко навыка"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SLEEPY_DUPES.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SLEEPY_DUPES.BODY"
 msgid "All duplicants are extremely exhausted"
-msgstr "Alle Duplikanten sind extrem erschöpft"
+msgstr "Все дубликаны очень устали"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SLEEPY_DUPES.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SLEEPY_DUPES.TITLE"
 msgid "Sleepy Dupes"
-msgstr "Schläfrige Duplikanten"
+msgstr "Город засыпает"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SPAWN_DUPE.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SPAWN_DUPE.BODY_FORMAT"
 msgid "{0} was brought into the world"
-msgstr "{0} wurde in die Welt gesetzt"
+msgstr "{0} появился в этом жестоком мире"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SPAWN_DUPE.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SPAWN_DUPE.TITLE"
 msgid "Spawning Duplicant"
-msgstr "Duplikant erzeugt"
+msgstr "Создать дубликанта"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SPAWN_PREFAB.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SPAWN_PREFAB.BODY_FORMAT"
 msgid "A new {0} was created"
-msgstr "{0} wurde erschaffen"
+msgstr "Новый {0} был создан"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SPAWN_PREFAB.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SPAWN_PREFAB.TITLE"
 msgid "Spawning Object"
-msgstr "Objekt erzeugt"
+msgstr "Создать обьект"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SPICE_FOOD.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SPICE_FOOD.BODY"
 msgid "All food has had spices applied"
-msgstr "Alles Essen wurde nachgewürzt"
+msgstr "Во всю еду добавили \"Тобаско\""
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SPICE_FOOD.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SPICE_FOOD.TITLE"
 msgid "Spiced Food"
-msgstr "Gewürztes Essen"
+msgstr "Острая еда"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.STARTING_VOTE.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.STARTING_VOTE.TITLE"
 msgid "Starting Vote"
-msgstr "Starte Abstimmung"
+msgstr "Да будет голосование!"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.STRESS_DECREASE.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.STRESS_DECREASE.BODY"
 msgid "All duplicants are less stressed"
-msgstr "Alle Duplikate sind weniger gestresst"
+msgstr "Стресс уменьшен. Есть еще добрые люди"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.STRESS_DECREASE.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.STRESS_DECREASE.TITLE"
 msgid "Calming Wave"
-msgstr "Beruhigungswelle"
+msgstr "Охладитель Анубиса V2.0"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.STRESS_INCREASE.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.STRESS_INCREASE.BODY"
 msgid "All duplicants are very stressed about life"
-msgstr "Alle Duplikanten sind sehr gestresst vom Leben"
+msgstr "Все дубликнты обеспокоены данным фактом"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.STRESS_INCREASE.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.STRESS_INCREASE.TITLE"
 msgid "Stress Wave"
-msgstr "Stresswelle"
+msgstr "Кол в ж.."
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SURPRISE_BOX.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SURPRISE_BOX.BODY"
 msgid "I wonder what is inside?"
-msgstr "Ich frag mich was da drin ist?"
+msgstr "Что же внутри?"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.SURPRISE_BOX.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.SURPRISE_BOX.TITLE"
 msgid "Surprise Box"
-msgstr "Überaschungsbox"
+msgstr "Коробка с сюрпризом"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.TILE_TEMP_DOWN.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.TILE_TEMP_DOWN.BODY"
 msgid "All non-natural tiles are colder"
-msgstr "Alle konstruierten Ziegel sind kälter"
+msgstr "Все ненатуральные плитки стали холоднее"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.TILE_TEMP_DOWN.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.TILE_TEMP_DOWN.TITLE"
 msgid "Icy Floors"
-msgstr "Eisige Korridore"
+msgstr "Ледяной пол"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.TILE_TEMP_UP.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.TILE_TEMP_UP.BODY"
 msgid "All non-natural tiles are warmer"
-msgstr "Alle konstruierten Ziegel sind wärmer"
+msgstr "Все ненатуральные плитки стали теплее"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.TILE_TEMP_UP.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.TILE_TEMP_UP.TITLE"
 msgid "The Floor is Lava"
-msgstr "Der Boden ist Lava"
+msgstr "Пол это Лава"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.UNINSULATE_TILES.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.UNINSULATE_TILES.BODY"
 msgid "Many tiles have been replaced with non-insulated versions"
-msgstr "Viele Ziegel sind durch nicht isolierte Versionen ersetzt worden"
+msgstr "Некоторые теплоизолированные клетки стали обычными"
 
 #. ONITwitch.STRINGS.ONITWITCH.TOASTS.UNINSULATE_TILES.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.TOASTS.UNINSULATE_TILES.TITLE"
 msgid "Tiles Uninsulated"
-msgstr "Isolierung geklaut"
+msgstr "Обычная клетка"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.APPLY.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.APPLY.TEXT"
 msgid "Apply"
-msgstr "Anwenden"
+msgstr "Применить"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.CHANNEL_NAME.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.CHANNEL_NAME.TEXT"
 msgid "Channel Name"
-msgstr "Kanalname"
+msgstr "Имя канала"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.CHANNEL_NAME.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.CHANNEL_NAME.TOOLTIP"
@@ -909,13 +906,13 @@ msgid ""
 "The name of the Twitch channel to interact with.\n"
 "This should be your username. (example: asquared31415)"
 msgstr ""
-"Der Name des Twitch-Kanals, auf welchem die Interaktionen stattfinden.\n"
-"Das sollte dein Nutzername sein (Beispiel: asquared31415)."
+"Название twitch канала.\n"
+"Это должно быть имя канала (Например: Lavrikot)."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.EDIT.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.EDIT.TEXT"
 msgid "Edit Event Config"
-msgstr "Event-Konfiguration anpassen"
+msgstr "Редактировать конфиг события"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.EDIT.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.EDIT.TOOLTIP"
@@ -923,47 +920,45 @@ msgid ""
 "Opens a page in a browser to edit the current event config. (WARNING: "
 "SPOILERS)"
 msgstr ""
-"Öffnet eine Website im Browser zum Anpassen der aktuellen "
-"Eventeinstellungen. (ACHTUNG: SPOILER, ALLE Events werden hier gelistet)"
+"Открывает страницу в браузере для редактирования текущей конфигурации "
+"события. (ВНИМАНИЕ: СПОЙЛЕРЫ)"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.MAX_DANGER.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.MAX_DANGER.TEXT"
 msgid "Max Danger"
-msgstr "Höchste Gefahrenstufe"
+msgstr "Макс опасность"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.MAX_DANGER.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.MAX_DANGER.TOOLTIP"
 msgid "Events with a danger greater than this setting will not appear."
 msgstr ""
-"Events mit einer höheren Gefahrenstufe als hier eingestellt werden nicht "
-"erscheinen."
+"События с опасностью, превышающей этот параметр, отображаться не будут."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.MIN_DANGER.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.MIN_DANGER.TEXT"
 msgid "Min Danger"
-msgstr "Niedrigste Gefahrenstufe"
+msgstr "Мин опасность"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.MIN_DANGER.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.MIN_DANGER.TOOLTIP"
 msgid "Events with a danger less than this setting will not appear."
 msgstr ""
-"Events mit einer niedrigeren Gefahrenstufe als hier eingestellt werden nicht "
-"erscheinen."
+"События с опасностью, меньшей, чем эта настройка, отображаться не будут."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.OPTIONS_PER_VOTE.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.OPTIONS_PER_VOTE.TEXT"
 msgid "Options per Vote (1-5)"
-msgstr "Anzahl an Abstimmungsoptionen (1-5)"
+msgstr "Колличество голосований (1-5)"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.OPTIONS_PER_VOTE.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.OPTIONS_PER_VOTE.TOOLTIP"
 msgid "The number of options that should be available to vote for."
-msgstr "Anzahl an Optionen, die bei einer Abstimmung angezeigt werden sollen."
+msgstr "Количество вариантов, доступных для голосования"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.SHOW_START_TOASTS.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.SHOW_START_TOASTS.TEXT"
 msgid "Show Vote Choice Notifications"
-msgstr "Abstimmungsoptionen anzeigen"
+msgstr "Показывать уведомления о выборе при голосовании"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.SHOW_START_TOASTS.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.SHOW_START_TOASTS.TOOLTIP"
@@ -971,16 +966,13 @@ msgid ""
 "Whether to show notifications when a vote starts. This can be disabled if "
 "you want to not know what options chat has."
 msgstr ""
-"Wenn aktiviert, werden bei Start einer Abstimmung die Optionen in einem.\n"
-" kleinen Benachrichtigungsfenster kurz eingeblendet.\n"
-"Dies kann deaktiviert werden, wenn innerhalb des Spiels nicht angezeigt "
-"werden soll,.\n"
-" welche Abstimmmöglichkeiten dem Chat zur Verfügung stehen."
+"Показывать ли уведомления о начале голосования. Это можно отключить, если вы "
+"не хотите знать, какие опции есть в чате."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.SHOW_TOASTS.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.SHOW_TOASTS.TEXT"
 msgid "Show Notifications"
-msgstr "Benachrichtigungsfenster anzeigen"
+msgstr "Показывать уведомления"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.SHOW_TOASTS.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.SHOW_TOASTS.TOOLTIP"
@@ -988,13 +980,13 @@ msgid ""
 "Whether to show any notifications from the Twitch Integration mod or any "
 "events."
 msgstr ""
-"Kontrolliert, ob Benachrichtigungsfenster des Twitch-Integration-Mods und "
-"seiner Events angezeigt werden."
+"Показывать ли какие-либо уведомления из модуля интеграции Twitch или какие-"
+"либо события."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.TIME_BETWEEN_VOTES.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.TIME_BETWEEN_VOTES.TEXT"
 msgid "Time Between Votes"
-msgstr "Zeit zwischen Abstimmungen"
+msgstr "Время между голосованиями"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.TIME_BETWEEN_VOTES.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.TIME_BETWEEN_VOTES.TOOLTIP"
@@ -1002,18 +994,18 @@ msgid ""
 "The amount of real time, in seconds, that should pass between the end of one "
 "vote and the start of the next. (example: 600)"
 msgstr ""
-"Abklingzeit vom Ende einer Abstimmung zum Beginn der Nächsten in "
-"(Echtzeit-)Sekunden (z.B. 600 = 10 Minuten)."
+"Количество реального времени в секундах, которое должно пройти между "
+"окончанием одного голосования и началом следующего. (пример: 600)"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.TITLE"
 msgid "Twitch Integration Settings"
-msgstr "Twitch Integration Einstellungen"
+msgstr "Настройки интеграции Twitch"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.USE_TWITCH_COLORS.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.USE_TWITCH_COLORS.TEXT"
 msgid "Use Twitch Username Colors"
-msgstr "Nutze Twitch Nutzernamen-Farbe"
+msgstr "Используйте цвета имени пользователя Twitch"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.USE_TWITCH_COLORS.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.USE_TWITCH_COLORS.TOOLTIP"
@@ -1023,15 +1015,15 @@ msgid ""
 "Note: If a user has not set their username color manually, it will be white, "
 "even though Twitch chat picks a random color."
 msgstr ""
-"Entscheidet, ob bei Erzeugung einer Duplikantenkopie eines Chatnutzers .\n"
-"dessen Twitch-Farbe in den Namen mitübernommen wird.\n"
-"Zu beachten: Nutzer ohne manuell eingestellte Farbe werden.\n"
-"als weiß interpretiert, auch wenn im Chat der Name eine zufällige Farbe hat."
+"Следует ли копировать цвет имени пользователя в чате на имя его дубликата, "
+"если они созданы.\n"
+"Примечание: Если пользователь не установил цвет своего имени пользователя "
+"вручную, он будет белым, даже если Twitch chat выберет случайный цвет."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.VOTING_TIME.TEXT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.VOTING_TIME.TEXT"
 msgid "Voting Time"
-msgstr "Abstimmungszeit"
+msgstr "Время голосования"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.VOTING_TIME.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.CONFIG.VOTING_TIME.TOOLTIP"
@@ -1039,37 +1031,38 @@ msgid ""
 "The amount of real time, in seconds, that a vote should be active for. "
 "(example: 60)"
 msgstr ""
-"Zeit in (Echtzeit-)Sekunden, welche die Abstimmung aktiv sein soll. (z.B. 60)"
+"Количество реального времени в секундах, в течение которого можно "
+"голосовать. (пример: 60)"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DANGER.DEADLY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DANGER.DEADLY"
 msgid "Deadly"
-msgstr "Tödlich"
+msgstr "Смертельно"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DANGER.EXTREME
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DANGER.EXTREME"
 msgid "Extreme"
-msgstr "Extrem"
+msgstr "Экстремально"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DANGER.HIGH
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DANGER.HIGH"
 msgid "High"
-msgstr "Hoch"
+msgstr "Высокий"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DANGER.MEDIUM
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DANGER.MEDIUM"
 msgid "Medium"
-msgstr "Mittel"
+msgstr "Средний"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DANGER.NONE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DANGER.NONE"
 msgid "None"
-msgstr "Keine"
+msgstr "Нет"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DANGER.SMALL
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DANGER.SMALL"
 msgid "Small"
-msgstr "Minimal"
+msgstr "Маленький"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.CONNECTION_ERROR.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.CONNECTION_ERROR.BODY_FORMAT"
@@ -1077,13 +1070,13 @@ msgid ""
 "The connection to Twitch failed {0} times. This may be caused by a bad "
 "internet connection or invalid credentials."
 msgstr ""
-"Die Netzwerkverbindung zu Twitch schlug {0} mal fehl. Das kann an einer "
-"schlechten Internetverbindung oder ungültigen Anmeldedaten liegen."
+"Подключение к Twitch завершилось неудачей {0} раз. Это может быть вызвано "
+"плохим подключением к Интернету или неверными учетными данными."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.CONNECTION_ERROR.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.CONNECTION_ERROR.TITLE"
 msgid "Connection Error"
-msgstr "Verbindungsfehler"
+msgstr "Ошибка подключения"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.DEADLY_CONFIG.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.DEADLY_CONFIG.BODY"
@@ -1093,31 +1086,30 @@ msgid ""
 "often with no opportunity to prevent it.  Do not get too attached to your "
 "dupes."
 msgstr ""
-"Die Gefahrenstufe \"Tödlich\" hat Events, welche "
-"<color=#FE2F2FFF><i><b>deine Duplikanten direkt töten können</b></i></color> "
-"oder extrem tödliche Dinge auslösen,.\n"
-" oft ohne die Möglichkeit, diese zu verhindern. Häng nicht zu sehr an deinen "
-"Duplikaten."
+"В \"Смертельной опасности\" есть события, которые могут "
+"<color=#FE2F2FFF><i><b> непосредственно убить ваших двойников</b></i></"
+"color> или вызвать чрезвычайно смертоносные события, часто без возможности "
+"предотвратить это. Не слишком привязывайтесь к своим дублям."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.DEADLY_CONFIG.CONTINUE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.DEADLY_CONFIG.CONTINUE"
 msgid "<color=#FE2F2FFF>Continue</color>"
-msgstr "<color=#FE2F2FFF>Fortsetzen</color>"
+msgstr "<color=#FE2F2FFF>Продолжить</color>"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.DEADLY_CONFIG.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.DEADLY_CONFIG.TITLE"
 msgid "Deadly Settings"
-msgstr "Gefahrenstufe \"Tödlich\""
+msgstr "Смертельные настройки"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.EVENT_CONFIG.PASTE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.EVENT_CONFIG.PASTE"
 msgid "Paste Config Here"
-msgstr "Hier Konfiguration einfügen"
+msgstr "Вставьте конфигурацию сюда"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.EVENT_CONFIG.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.EVENT_CONFIG.TITLE"
 msgid "Twitch Integration Event Config"
-msgstr "Twitch Integration Ereignis-Konfiguration"
+msgstr "Twitch Integration Конфигурация события"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.EVENT_ERROR.BODY_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.EVENT_ERROR.BODY_FORMAT"
@@ -1126,14 +1118,15 @@ msgid ""
 "Stopping votes.\n"
 "Please report this error (and provide the log) to that event's author."
 msgstr ""
-"Event {0} ist während der Ausführung abgestürzt: {1}.\n"
-"Abstimmungen gestoppt.\n"
-"Bitte diesen Fehler (mit Log-Datei) dem Autor des Event melden."
+"Событие {0} завершилось сбоем при запуске: {1}.\n"
+"Остановка голосования.\n"
+"Пожалуйста, сообщите об этой ошибке (и предоставьте журнал) автору этого "
+"события."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.EVENT_ERROR.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.EVENT_ERROR.TITLE"
 msgid "Event Error"
-msgstr "Eventfehler"
+msgstr "Ошибка события"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.CONNECTION_OAUTH_ERR
 msgctxt ""
@@ -1143,8 +1136,8 @@ msgid ""
 "An unknown error occured when validating your OAuth token with Twitch. (No "
 "response from server)"
 msgstr ""
-"Ein unbekannter Fehler ist bei der Validierung des OAuth-Tokes mit Twitch "
-"aufgetreten (Keine Serverantwort)"
+"Произошла неизвестная ошибка при проверке вашего токена OAuth с помощью "
+"Twitch. (Нет ответа от сервера)"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.EXPIRED_OAUTH
 msgctxt ""
@@ -1153,9 +1146,9 @@ msgid ""
 "The OAuth token is invalid or has expired. Please generate a new token "
 "following the instructions in the README. Using anonymous connection."
 msgstr ""
-"Der OAuth-Token ist ungültig oder abgelaufen. Wechsle stattdessen auf "
-"anonyme Verbindung. Bitte generiere einen neuen Token anhand der Anleitung "
-"in der README-Datei."
+"Токен OAuth недействителен или срок его действия истек. Пожалуйста, "
+"сгенерируйте новый токен, следуя инструкциям в README. Используя анонимное "
+"соединение."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.INVALID_FILE
 msgctxt ""
@@ -1164,8 +1157,8 @@ msgid ""
 "The credentials file was broken and has been reset, please follow the "
 "instructions in the README."
 msgstr ""
-"Die Anmeldedatei war defekt und wurde zurückgesetzt. Bitte folge den "
-"Anweisungen in der README."
+"Файл учетных данных был поврежден и был сброшен, пожалуйста, следуйте "
+"инструкциям в README."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.INVALID_NICK
 msgctxt ""
@@ -1174,8 +1167,8 @@ msgid ""
 "The Twitch nickname in the credentials file was not a valid nickname. Using "
 "anonymous connection."
 msgstr ""
-"Der angegebene Twitch-Benutzername in der Anmeldedatei war kein valider "
-"Benutzername. Stattdessen wird nun ein anonymer Login verwendet."
+"Ник Twitch в файле учетных данных не был действительным ником. Использование "
+"анонимного подключения."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.MALFORMED_OAUTH
 msgctxt ""
@@ -1185,9 +1178,9 @@ msgid ""
 "The OAuth token should be composed of only numbers and letters. Using "
 "anonymous connection."
 msgstr ""
-"Ungültiger OAuth-Token!\n"
-"Der OAuth-Token sollte nur aus Zahlen und Buchstaben bestehen. Stattdessen "
-"wird nun ein anonymer Login verwendet."
+"Недопустимый токен OAuth!\n"
+"Токен OAuth должен состоять только из цифр и букв. Используется анонимное "
+"соединение."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.NICK_CONTAINS_SLASH
 msgctxt ""
@@ -1198,10 +1191,9 @@ msgid ""
 "should be <i>only</i> the name you use to log in to Twitch. Using anonymous "
 "connection."
 msgstr ""
-"Der Twitch-Benutzername in der Anmeldedatei enthielt ein Slash. Dies sollte "
-"<i>nur</i> der Name sein, .\n"
-"welcher bei der Anmeldung bei Twitch verwendet wird (nicht der Anzeigename). "
-"Stattdessen wird nun ein anonymer Login verwendet."
+"Ник Twitch в файле учетных данных содержал косую черту. Ник должен быть "
+"только <i></i> именем, которое вы используете для входа в Twitch. "
+"Использование анонимного подключения."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.NO_LOGIN
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.NO_LOGIN"
@@ -1209,13 +1201,13 @@ msgid ""
 "The credentials file does not have a Twitch nickname set. Using anonymous "
 "connection."
 msgstr ""
-"Der Anmeldedatei fehlt ein Benutzername. Stattdessen wird nun ein anonymer "
-"Login verwendet."
+"В файле учетных данных не указан ник Twitch. Используется анонимное "
+"подключение."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.TITLE"
 msgid "Invalid Credentials"
-msgstr "Ungültige Anmeldedaten"
+msgstr "Неверные учетные данные"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_CREDENTIALS.UNKNOWN_OAUTH_ERR
 msgctxt ""
@@ -1224,28 +1216,28 @@ msgid ""
 "An unknown error occured when validating your OAuth token with Twitch. Using "
 "anonymous connection."
 msgstr ""
-"Ein unbekannter Fehler ist bei der Validierung des OAuth-Tokens mit Twitch "
-"aufgetreten. Stattdessen wird nun ein anonymer Login verwendet."
+"Произошла неизвестная ошибка при проверке вашего токена OAuth с помощью "
+"Twitch. Использование анонимного соединения."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_EVENT_CONFIG.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_EVENT_CONFIG.BODY"
 msgid "The config provided was invalid"
-msgstr "Die übergebene Konfiguration war ungültig"
+msgstr "Предоставленная конфигурация была недействительной"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_EVENT_CONFIG.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.INVALID_EVENT_CONFIG.TITLE"
 msgid "Invalid Config"
-msgstr "Ungültige Konfiguration"
+msgstr "Недопустимая конфигурация"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.NO_VOTES.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.NO_VOTES.BODY"
 msgid "No events were able to be drawn."
-msgstr "Es konnten keine Events gewürfelt werden."
+msgstr "Никаких событий нарисовать не удалось."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.NO_VOTES.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.NO_VOTES.TITLE"
 msgid "Cannot Start Vote"
-msgstr "Kann Abstimmung nicht starten"
+msgstr "Не удается начать голосование"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.NOT_AUTHENTICATED.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.NOT_AUTHENTICATED.BODY"
@@ -1253,14 +1245,13 @@ msgid ""
 "You are not authenticated with Twitch. The vote cannot be started. This may "
 "be caused by incorrect or missing credentials."
 msgstr ""
-"Es konnte keine Anmeldung mit Twitch durchgeführt werden. Die Abstimmung "
-"kann deshalb nicht gestartet werden.\n"
-"Dies ist möglicherweise durch falsche oder fehlende Anmeldedaten verursacht."
+"Вы не прошли аутентификацию в Twitch. Голосование не может быть запущено. "
+"Это может быть вызвано неправильными или отсутствующими учетными данными."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.NOT_AUTHENTICATED.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.NOT_AUTHENTICATED.TITLE"
 msgid "Not Authenticated"
-msgstr "Nicht Angemeldet"
+msgstr "Не аутентифицирован"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNKNOWN_SAVE.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNKNOWN_SAVE.BODY"
@@ -1268,103 +1259,102 @@ msgid ""
 "An unknown version of the Twitch Integration config was encountered and the "
 "config had to be reset. Your old config has been saved to config_bak.json."
 msgstr ""
-"Es wurde eine unbekannte Version der Twitch-Integration-Konfiguration "
-"gefunden und die Konfiguration musste zurückgesetzt werden. \n"
-"Die alte Konfiguration wurde als config_bak.json gespeichert."
+"Обнаружена неизвестная версия конфигурации интеграции Twitch, и конфигурацию "
+"пришлось сбросить. Ваша старая конфигурация была сохранена в config_bak.json."
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNKNOWN_SAVE.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNKNOWN_SAVE.TITLE"
 msgid "Unknown Save Version"
-msgstr "Unbekannte Spielstandversion"
+msgstr "Неизвестная версия сохранения"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.BACK
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.BACK"
 msgid "Go Back"
-msgstr "Zurück"
+msgstr "Назад"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.BODY
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.BODY"
 msgid "There are unsaved changes, are you sure you want to exit?"
-msgstr "Es liegen ungespeicherte Änderungen vor, wirklich verlassen?"
+msgstr "Есть несохраненные изменения, вы уверены, что хотите выйти?"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.DISCARD
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.DISCARD"
 msgid "Discard Changes"
-msgstr "Änderungen verwerfen"
+msgstr "Отменить изменения"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.SAVE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.SAVE"
 msgid "Save Changes"
-msgstr "Änderungen speichern"
+msgstr "Сохранить изменения"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.TITLE
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.DIALOGS.UNSAVED_CONFIG.TITLE"
 msgid "Unsaved Changes"
-msgstr "Ungespeicherte Änderungen"
+msgstr "Несохраненные изменения"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.PAUSE_MENU.START_VOTES
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.PAUSE_MENU.START_VOTES"
 msgid "Start Voting"
-msgstr "Starte Abstimmungen"
+msgstr "Начать голосование"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.POCKET_DIMENSION_EXTERIOR_SIDE_SCREEN.NAME
 msgctxt ""
 "ONITwitch.STRINGS.ONITWITCH.UI.POCKET_DIMENSION_EXTERIOR_SIDE_SCREEN.NAME"
 msgid "View Dimension"
-msgstr "Dimension anzeigen"
+msgstr "Посмотреть измерение"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.POCKET_DIMENSION_EXTERIOR_SIDE_SCREEN.TOOLTIP
 msgctxt ""
 "ONITwitch.STRINGS.ONITWITCH.UI.POCKET_DIMENSION_EXTERIOR_SIDE_SCREEN.TOOLTIP"
 msgid "View the dimension that this portal is attached to"
-msgstr "Zeig mir die Dimension wo dieses Portal hinführt"
+msgstr "Просмотрите измерение, к которому привязан этот портал"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.POCKET_DIMENSION_INTERIOR_SIDE_SCREEN.NAME
 msgctxt ""
 "ONITwitch.STRINGS.ONITWITCH.UI.POCKET_DIMENSION_INTERIOR_SIDE_SCREEN.NAME"
 msgid "View Parent"
-msgstr "Basiswelt anzeigen"
+msgstr "Посмотреть другой портал"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.POCKET_DIMENSION_INTERIOR_SIDE_SCREEN.TOOLTIP
 msgctxt ""
 "ONITwitch.STRINGS.ONITWITCH.UI.POCKET_DIMENSION_INTERIOR_SIDE_SCREEN.TOOLTIP"
 msgid "View the world that holds this dimension"
-msgstr "Zeig mir die Welt wo diese Taschendimension geöffnet wurde"
+msgstr "Взгляните на мир, который содержит это измерение"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.SETTINGS.BUTTON_NAME
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.SETTINGS.BUTTON_NAME"
 msgid "Settings"
-msgstr "Optionen"
+msgstr "Настройки"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.SURPRISE_BOX_SIDE_SCREEN.NAME
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.SURPRISE_BOX_SIDE_SCREEN.NAME"
 msgid "Open"
-msgstr "Öffnen"
+msgstr "Открыть"
 
 #. ONITwitch.STRINGS.ONITWITCH.UI.SURPRISE_BOX_SIDE_SCREEN.TOOLTIP
 msgctxt "ONITwitch.STRINGS.ONITWITCH.UI.SURPRISE_BOX_SIDE_SCREEN.TOOLTIP"
 msgid "Open this box to receive your surprise!"
-msgstr "Mach diese Box auf, um deine Überraschung zu erhalten!"
+msgstr "Откройте эту коробку, чтобы получить свой сюрприз!"
 
 #. ONITwitch.STRINGS.ONITWITCH.VOTE_CONTROLLER.CHOSEN_VOTE_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.VOTE_CONTROLLER.CHOSEN_VOTE_FORMAT"
 msgid "The chosen vote was {0} with {1} votes"
-msgstr "Die Abstimmung gewann {0} mit {1} Stimmen"
+msgstr "Выбранный голос был {0} при {1} голосах"
 
 #. ONITwitch.STRINGS.ONITWITCH.VOTE_CONTROLLER.NO_VOTES
 msgctxt "ONITwitch.STRINGS.ONITWITCH.VOTE_CONTROLLER.NO_VOTES"
 msgid "No options were voted for"
-msgstr "Es wurde für keine der Optionen abgestimmt"
+msgstr "Никто не проголосовал"
 
 #. ONITwitch.STRINGS.ONITWITCH.VOTE_CONTROLLER.START_VOTE_HEADER
 msgctxt "ONITwitch.STRINGS.ONITWITCH.VOTE_CONTROLLER.START_VOTE_HEADER"
 msgid "Starting new vote! "
-msgstr "Starte neue Abstimmung! "
+msgstr "Начать новое голосование!"
 
 #. ONITwitch.STRINGS.ONITWITCH.VOTE_INFO_FILE.ERROR
 msgctxt "ONITwitch.STRINGS.ONITWITCH.VOTE_INFO_FILE.ERROR"
 msgid "An error occurred"
-msgstr "Ein Fehler ist aufgetreten"
+msgstr "Ошибка"
 
 #. ONITwitch.STRINGS.ONITWITCH.VOTE_INFO_FILE.IN_PROGRESS_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.VOTE_INFO_FILE.IN_PROGRESS_FORMAT"
@@ -1372,25 +1362,25 @@ msgid ""
 "Current Vote: ({0:F0}s)\n"
 "{1}"
 msgstr ""
-"Momentane Abstimmung: ({0:F0}s)\n"
+"Текущее голосование: ({0:F0}s)\n"
 "{1}"
 
 #. ONITwitch.STRINGS.ONITWITCH.VOTE_INFO_FILE.NOT_STARTED
 msgctxt "ONITwitch.STRINGS.ONITWITCH.VOTE_INFO_FILE.NOT_STARTED"
 msgid "Voting not yet started"
-msgstr "Abstimmungen wurden noch nicht gestartet"
+msgstr "Голосование еще не началось"
 
 #. ONITwitch.STRINGS.ONITWITCH.VOTE_INFO_FILE.VOTE_OVER_FORMAT
 msgctxt "ONITwitch.STRINGS.ONITWITCH.VOTE_INFO_FILE.VOTE_OVER_FORMAT"
 msgid "Vote Over ({0:F0} seconds to next vote)"
 msgstr ""
-"Abstimmung vorbei\n"
-" ({0:F0} Sekunden bis zur nächsten Abstimmung)"
+"Голосование окончено\n"
+" ({0:F0} секунд до следующего голосования)"
 
 #. ONITwitch.STRINGS.ONITWITCH.WORLDS.POCKET_DIMENSION.NAME
 msgctxt "ONITwitch.STRINGS.ONITWITCH.WORLDS.POCKET_DIMENSION.NAME"
 msgid "Pocket Dimension"
-msgstr "Taschendimension"
+msgstr "Портал в другое измерение"
 
 #~ msgctxt ""
 #~ "ONITwitch.STRINGS.BUILDINGS.PREFABS.ONITWITCH."

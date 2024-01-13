@@ -283,7 +283,7 @@ internal class EventsPanel : IDevToolPanel
 
 	[MustUseReturnValue]
 	[NotNull]
-	private static List<(string Namespace, List<(string GroupName, List<EventInfo> Events)> GroupedEvents)>
+	public static List<(string Namespace, List<(string GroupName, List<EventInfo> Events)> GroupedEvents)>
 		GenerateEventEntries([CanBeNull] string filter)
 	{
 		var namespacedGroupedEvents = new Dictionary<string, Dictionary<string, List<EventInfo>>>();

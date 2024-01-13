@@ -1,71 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project>
+    
+    <Target Name="Test" AfterTargets="Build">
+        
+    </Target>
+    
     <!-- Checking not IsLib because the example mod merges the shared lib -->
-    <Target Name="Merge" AfterTargets="Build" Condition="'$(IsLib)' != 'true'">
-        <ItemGroup>
-            <_LocalRefs Include="$(TargetDir)/*.dll" Exclude="$(TargetPath)" />
-        </ItemGroup>
-        <Exec
-            Command="wine64 $(NuGetPackageRoot)/ilrepack/$(ILRepackVersion)/tools/ILRepack.exe /out:$(TargetPath) /lib:$(SolutionDir)/lib $(TargetPath) @(_LocalRefs -> '%(Identity)', ' ') > /dev/null 2>&amp;1" />
-        <Delete Files="@(_LocalRefs)" />
-    </Target>
+<!--    <Target Name="Merge" AfterTargets="Build" Condition="'$(IsLib)' != 'true'">-->
+<!--        <ItemGroup>-->
+<!--            <_LocalRefs Include="$(TargetDir)/*.dll" Exclude="$(TargetPath)" />-->
+<!--        </ItemGroup>-->
+<!--        <Exec Command="echo @(_LocalRefs -> '%(Identity)', ' ')"/>-->
+<!--        <Exec-->
+<!--            Command="$(NuGetPackageRoot)/ilrepack/$(ILRepackVersion)/tools/ILRepack.exe /out:$(TargetPath) $(TargetPath) @(_LocalRefs -> '%(Identity)', ' ') > /dev/null 2>&amp;1" />-->
+<!--        <Delete Files="@(_LocalRefs)" />-->
+<!--    </Target>-->
 
-    <PropertyGroup>
-        <OutputModPath>../obj/$(AssemblyName)</OutputModPath>
-        <ModsPath>$(GameSavePath)/mods/Dev/$(AssemblyName)/</ModsPath>
-    </PropertyGroup>
+<!--    <PropertyGroup>-->
+<!--        <OutputModPath>../build/$(AssemblyName)</OutputModPath>-->
+<!--        <ModsPath>$(GameSavePath)/mods/Dev/$(AssemblyName)/</ModsPath>-->
+<!--    </PropertyGroup>-->
 
-    <!-- Checking not IsLib because the example mod should be copied too -->
-    <ItemGroup Condition="'$(IsLib)' != 'true'">
-        <_Anim Include="$(ProjectDir)anim/**" />
-        <_Assets Include="$(ProjectDir)assets/**" />
-        <_Templates Include="$(ProjectDir)templates/**" />
-        <_Translations Include="$(ProjectDir)translations/**" />
-        <_Elements Include="$(ProjectDir)elements/**" />
-        <_ModInfo Include="$(ProjectDir)/mod_info.yaml;$(ProjectDir)/mod.yaml" />
-        <_ModDLL Include="$(TargetPath)" />
-        <_Readme Include="$(ProjectDir)/README.txt;$(ProjectDir)/CREDITS.txt" />
-    </ItemGroup>
+<!--    &lt;!&ndash; Checking not IsLib because the example mod should be copied too &ndash;&gt;-->
+<!--    <ItemGroup Condition="'$(IsLib)' != 'true'">-->
+<!--        <_Anim Include="$(ProjectDir)anim/**" />-->
+<!--        <_Assets Include="$(ProjectDir)assets/**" />-->
+<!--        <_Templates Include="$(ProjectDir)templates/**" />-->
+<!--        <_Translations Include="$(ProjectDir)translations/**" />-->
+<!--        <_Elements Include="$(ProjectDir)elements/**" />-->
+<!--        <_ModInfo Include="$(ProjectDir)/mod_info.yaml;$(ProjectDir)/mod.yaml" />-->
+<!--        <_ModDLL Include="$(TargetPath)" />-->
+<!--        <_Readme Include="$(ProjectDir)/README.txt;$(ProjectDir)/CREDITS.txt" />-->
+<!--    </ItemGroup>-->
 
-    <!-- Copy the mod to the staging dir, and then the final mods folder -->
-    <Target Name="CopyMod" AfterTargets="Merge" Condition="'$(IsLib)' != 'true'"
-        Inputs="@(_ModInfo);@(_ModDLL)"
-        Outputs="@(_ModInfo -> $(OutputModPath)%(Filename)%(Extension));@(_ModDLL -> $(OutputModPath)%(Filename)%(Extension))">
-        <!-- Copy the mod into a staging folder -->
-        <!-- DLL and mod info must always exist -->
-        <Copy SourceFiles="@(_ModDLL)" DestinationFolder="$(OutputModPath)" />
-        <Copy SourceFiles="@(_ModInfo)" DestinationFolder="$(OutputModPath)" />
+<!--    &lt;!&ndash; Copy the mod to the staging dir, and then the final mods folder &ndash;&gt;-->
+<!--    <Target Name="CopyMod" AfterTargets="Merge" Condition="'$(IsLib)' != 'true'"-->
+<!--        Inputs="@(_ModInfo);@(_ModDLL)"-->
+<!--        Outputs="@(_ModInfo -> $(OutputModPath)%(Filename)%(Extension));@(_ModDLL -> $(OutputModPath)%(Filename)%(Extension))">-->
+<!--        &lt;!&ndash; Copy the mod into a staging folder &ndash;&gt;-->
+<!--        &lt;!&ndash; DLL and mod info must always exist &ndash;&gt;-->
+<!--        <Copy SourceFiles="@(_ModDLL)" DestinationFolder="$(OutputModPath)" />-->
+<!--        <Copy SourceFiles="@(_ModInfo)" DestinationFolder="$(OutputModPath)" />-->
 
-        <!-- The other files and folders should only be copied if they exist -->
-        <Copy SourceFiles="@(_Anim)" DestinationFolder="$(OutputModPath)/anim/%(RecursiveDir)"
-            Condition="Exists(%(FullPath))" />
-        <Copy SourceFiles="@(_Assets)" DestinationFolder="$(OutputModPath)/assets/%(RecursiveDir)"
-            Condition="Exists(%(FullPath))" />
-        <Copy SourceFiles="@(_Templates)"
-            DestinationFolder="$(OutputModPath)/templates/%(RecursiveDir)"
-            Condition="Exists(%(FullPath))" />
-        <Copy SourceFiles="@(_Translations)"
-            DestinationFolder="$(OutputModPath)/translations/%(RecursiveDir)"
-            Condition="Exists(%(FullPath))" />
-        <Copy SourceFiles="@(_Elements)"
-            DestinationFolder="$(OutputModPath)/elements/%(RecursiveDir)"
-            Condition="Exists(%(FullPath))" />
-        <Copy SourceFiles="@(_Readme)" DestinationFolder="$(OutputModPath)/%(RecursiveDir)"
-            Condition="Exists(%(FullPath))" />
-        <Copy SourceFiles="@(CopyFolder)"
-            DestinationFolder="$(OutputModPath)/%(CopyFolder.DestName)/%(RecursiveDir)"
-            Condition="Exists(%(FullPath))" />
+<!--        &lt;!&ndash; The other files and folders should only be copied if they exist &ndash;&gt;-->
+<!--        <Copy SourceFiles="@(_Anim)" DestinationFolder="$(OutputModPath)/anim/%(RecursiveDir)"-->
+<!--            Condition="Exists(%(FullPath))" />-->
+<!--        <Copy SourceFiles="@(_Assets)" DestinationFolder="$(OutputModPath)/assets/%(RecursiveDir)"-->
+<!--            Condition="Exists(%(FullPath))" />-->
+<!--        <Copy SourceFiles="@(_Templates)"-->
+<!--            DestinationFolder="$(OutputModPath)/templates/%(RecursiveDir)"-->
+<!--            Condition="Exists(%(FullPath))" />-->
+<!--        <Copy SourceFiles="@(_Translations)"-->
+<!--            DestinationFolder="$(OutputModPath)/translations/%(RecursiveDir)"-->
+<!--            Condition="Exists(%(FullPath))" />-->
+<!--        <Copy SourceFiles="@(_Elements)"-->
+<!--            DestinationFolder="$(OutputModPath)/elements/%(RecursiveDir)"-->
+<!--            Condition="Exists(%(FullPath))" />-->
+<!--        <Copy SourceFiles="@(_Readme)" DestinationFolder="$(OutputModPath)/%(RecursiveDir)"-->
+<!--            Condition="Exists(%(FullPath))" />-->
+<!--        <Copy SourceFiles="@(CopyFolder)"-->
+<!--            DestinationFolder="$(OutputModPath)/%(CopyFolder.DestName)/%(RecursiveDir)"-->
+<!--            Condition="Exists(%(FullPath))" />-->
 
-        <!-- Copy the final mod to the mods folder -->
-        <ItemGroup>
-            <ModData Include="$(OutputModPath)/**" />
-        </ItemGroup>
-        <Copy SourceFiles="@(ModData)" DestinationFolder="$(ModsPath)/%(RecursiveDir)" />
-    </Target>
+<!--        &lt;!&ndash; Copy the final mod to the mods folder &ndash;&gt;-->
+<!--        <ItemGroup>-->
+<!--            <ModData Include="$(OutputModPath)/**" />-->
+<!--        </ItemGroup>-->
+<!--        <Copy SourceFiles="@(ModData)" DestinationFolder="$(ModsPath)/%(RecursiveDir)" />-->
+<!--    </Target>-->
 
-    <!-- The lib should also be output to the staging dir but it has different files -->
-    <Target Name="CopyLib" AfterTargets="Build" Condition="'$(IsLib)' == 'true'">
-        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(OutputModPath)" />
-        <Copy SourceFiles="$(TargetDir)/$(TargetName).xml" DestinationFolder="$(OutputModPath)" />
-    </Target>
+<!--    &lt;!&ndash; The lib should also be output to the staging dir but it has different files &ndash;&gt;-->
+<!--    <Target Name="CopyLib" AfterTargets="Build" Condition="'$(IsLib)' == 'true'">-->
+<!--        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(OutputModPath)" />-->
+<!--        <Copy SourceFiles="$(TargetDir)/$(TargetName).xml" DestinationFolder="$(OutputModPath)" />-->
+<!--    </Target>-->
 </Project>

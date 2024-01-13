@@ -32,3 +32,5 @@ target/
 
 # actual generated docs site
 /live_docs/
+
+build/
