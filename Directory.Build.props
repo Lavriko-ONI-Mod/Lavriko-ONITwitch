@@ -3,9 +3,9 @@
     <Import Condition=" Exists('Directory.Build.props.user') " Project="Directory.Build.props.user" />
     <PropertyGroup>
         <TargetFramework>net471</TargetFramework>
-        <LangVersion>preview</LangVersion>
+        <LangVersion>latest</LangVersion>
         <OutputType>Library</OutputType>
-        <LibFolder>../lib</LibFolder>
+        <LibFolder>C:\Users\Admin\Downloads\ONI 17.11.23\OxygenNotIncluded_Data\Managed</LibFolder>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)'=='Debug'">

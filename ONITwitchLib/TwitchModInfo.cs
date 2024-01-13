@@ -18,7 +18,7 @@ public static class TwitchModInfo
 	/// <summary>
 	///     The static ID of the Twitch mod.
 	/// </summary>
-	[PublicAPI] public const string StaticID = "asquared31415.TwitchIntegration";
+	[PublicAPI] public const string StaticID = "bird_egop.TwitchIntegration";
 
 	/// <summary>
 	///     The filename of the config file containing the main Twitch mod config.

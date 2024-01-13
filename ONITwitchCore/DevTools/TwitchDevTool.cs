@@ -1,7 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using ImGuiNET;
 using JetBrains.Annotations;
+using Newtonsoft.Json;
 using ONITwitch.DevTools.Panels;
+using ONITwitch.DonationAlerts;
+using ONITwitchLib;
+using ONITwitchLib.Utils;
+using PeterHan.PLib.Core;
+using PeterHan.PLib.UI;
+using STRINGS;
 using UnityEngine;
+using DataManager = ONITwitch.EventLib.DataManager;
+using EventInfo = ONITwitch.EventLib.EventInfo;
 
 namespace ONITwitch.DevTools;
 
@@ -49,7 +61,15 @@ internal class TwitchDevTool : DevTool
 		mainStyle.AddColor(ImGuiCol.ButtonActive, new Color(0.71f, 0.40f, 1.00f, 1.00f));
 		mainStyle.AddColor(ImGuiCol.Header, new Color(0.57f, 0.27f, 1.00f, 1.00f));
 		mainStyle.AddColor(ImGuiCol.HeaderHovered, new Color(0.64f, 0.34f, 1.00f, 1.00f));
-		mainStyle.AddColor(ImGuiCol.HeaderActive, new Color(0.71f, 0.40f, 1.00f, 1.00f));
+		mainStyle.AddColor(
+			ImGuiCol.HeaderActive,
+			new Color(
+				0.71f,
+				0.40f,
+				1.00f,
+				1.00f
+			)
+		);
 	}
 
 	internal static TwitchDevTool Instance { get; private set; }
@@ -83,6 +103,114 @@ internal class TwitchDevTool : DevTool
 				}
 
 				ImGui.Separator();
+				
+				if (ImGui.CollapsingHeader("Donation Alerts", ImGuiTreeNodeFlags.DefaultOpen))
+				{
+					ImGui.Text("Status: ");
+					ImGui.SameLine();
+					if (DonationAlertsController.Instance.Connected)
+					{
+						ImGui.Text("Connected");
+					}
+					else
+					{
+						ImGui.Text("Disonnected");
+					}
+					
+					if (ImGui.Button("Reconnect to donation alerts"))
+					{
+						DonationAlertsController.Instance.Connect();
+					}
+
+					if (DonationAlertsController.Instance.IsConnecting)
+					{
+						ImGui.ProgressBar((float)ImGui.GetTime() * -0.2f, new Vector2(), "Authorizing");
+					}
+
+					if (ImGui.Button("Start PLib UI"))
+					{
+						var pDialog = new PDialog("PLib Test")
+							{
+								Title = "Lavriko Twitch Integration", 
+								Size = new Vector2(600.0f, 200.0f),
+								MaxSize = new Vector2(600f, 800f),
+								SortKey = 150.0f,
+								DialogBackColor = PUITuning.Colors.OptionsBackground,
+								DialogClosed = option => { }, 
+								RoundToNearestEven = true,
+							}
+							.AddButton(
+								"ok",
+								"Ok",
+								"Ok",
+								PUITuning.Colors.ButtonPinkStyle
+							)
+							.AddButton(
+								PDialog.DIALOG_KEY_CLOSE,
+								PLibStrings.TOOLTIP_CANCEL,
+								PLibStrings.TOOLTIP_CANCEL,
+								PUITuning.Colors.ButtonBlueStyle
+							);
+
+						var entries = EventsPanel.GenerateEventEntries(null);
+
+						var content = new PPanel()
+						{
+							Alignment = TextAnchor.MiddleLeft
+						};
+						pDialog.Body.AddChild(new PScrollPane() {Child = content, ScrollVertical = true, AlwaysShowVertical = true, FlexSize = new Vector2(200f, 0)});
+						var dataInst = DataManager.Instance;
+						foreach (var (eventNamespace, groups) in entries)
+						{
+							foreach (var (groupName, events) in groups)
+							{
+								content.AddChild(
+									new PLabel()
+									{
+										Text = groupName,
+										TextAlignment = TextAnchor.MiddleCenter
+									}
+								);
+								foreach (var eventInfo in events)
+								{
+									var eventName = eventInfo.FriendlyName ?? "";
+									content.AddChild(
+										new PButton()
+										{
+											Text = eventName,
+											TextAlignment = TextAnchor.MiddleLeft,
+											OnClick = source =>
+											{
+												var data = dataInst.GetDataForEvent(eventInfo);
+												GameScheduler.Instance.Schedule(
+													"dev trigger event",
+													0,
+													_ => { eventInfo.Trigger(data); }
+												);
+											}
+										}
+									);
+								}
+							}
+						}
+
+						var obj = pDialog.Build();
+
+						if (obj.TryGetComponent(out KScreen dialog))
+						{
+							dialog.Activate();
+						}
+						else
+						{
+							DialogUtil.MakeDialog(
+								STRINGS.ONITWITCH.UI.DIALOGS.CONNECTION_ERROR.TITLE,
+								$"Failed to instantiate PLib UI",
+								UI.CONFIRMDIALOG.OK,
+								null
+							);
+						}
+					}
+				}
 
 				// Early out if the game isn't active, we can't do most things.
 				if (Game.Instance == null)
