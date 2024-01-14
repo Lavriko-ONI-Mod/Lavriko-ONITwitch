@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Net;
-using System.Net.WebSockets;
-using System.Text;
-using System.Threading;
+using System.Net.Http;
 using System.Threading.Tasks;
-using ONITwitch.Content.Cmps;
-using ONITwitchLib.Logger;
-using ONITwitchLib.Utils;
-using STRINGS;
 
 namespace ONITwitch.DonationAlerts;
 
@@ -20,67 +11,59 @@ public class DonationAlertsConnection
 
     public string AccessToken { get; private set; }
 
+    public string SocketToken { get; private set; }
+
+    private readonly HttpClient _httpClient = new();
+
     public void Start()
     {
         Task.Run(
-            async () =>
-            {
-                // loop up to 5 times if the connection gets dropped/disconnected
-                const int maxAttempts = 5;
-                IsConnecting = true;
-
-                // big try catch so that things get logged always, instead of silently ignored
-                try
+                async () =>
                 {
-                    var client = new WebClient();
+                    // loop up to 5 times if the connection gets dropped/disconnected
+                    const int maxAttempts = 5;
+                    IsConnecting = true;
 
-                    AccessToken = await client.DownloadStringTaskAsync(new Uri("http://localhost:27629/init"));
+                    MessageBox.Show("Connecting to DonationAlerts");
 
-                    IsConnecting = false;
+                    // big try catch so that things get logged always, instead of silently ignored
+                    try
+                    {
+                        var response = await _httpClient.GetAsync("http://localhost:27629/init");
 
-                    MainThreadScheduler.Schedule(
-                        () =>
-                        {
-                            Log.Warn("An error occurred");
-                            DialogUtil.MakeDialog(
-                                STRINGS.ONITWITCH.UI.DIALOGS.CONNECTION_ERROR.TITLE,
-                                $"Authorized Donation Alerts",
-                                UI.CONFIRMDIALOG.OK,
-                                null
-                            );
-                        }
-                    );
+                        response.EnsureSuccessStatusCode();
+
+                        AccessToken = await response.Content.ReadAsStringAsync();
+                        
+                        MessageBox.Show("DonationAlerts got access_token");
+
+                        IsConnecting = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"DonationAlerts failed.\n{ex}");
+                        throw;
+                    }
                 }
-                catch (WebException we)
+            )
+            .ContinueWith(
+                async (_) =>
                 {
-                    MainThreadScheduler.Schedule(
-                        () =>
-                        {
-                            Log.Warn("An error occurred");
-                            DialogUtil.MakeDialog(
-                                STRINGS.ONITWITCH.UI.DIALOGS.CONNECTION_ERROR.TITLE,
-                                $"Failed to authorize donation alerts.\nEnsure DonAlertInt.exe is Running",
-                                UI.CONFIRMDIALOG.OK,
-                                null
-                            );
-                        }
-                    );
+                    MessageBox.Show("Subscribing to donation alerts");
+                    try
+                    {
+                        var response = await _httpClient.GetAsync("http://localhost:27629/socket-token");
+
+                        response.EnsureSuccessStatusCode();
+                        
+                        MessageBox.Show("DonationAlerts got access_token");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"DonationAlerts unestablished {ex}");
+                        throw;
+                    }
                 }
-                catch (ThreadAbortException)
-                {
-                    Log.Warn("Thread aborted");
-                    throw;
-                }
-                catch (Exception e)
-                {
-                    // TODO: maybe UI warn here?
-                    Log.Warn("An unexpected exception occurred");
-                    Log.Debug(e.GetType());
-                    Log.Warn(e.Message);
-                    Log.Debug(e.StackTrace);
-                    throw;
-                }
-            }
-        );
+            );
     }
 }
