@@ -14,24 +14,11 @@
         <ProjectReference Include="..\ONITwitchLib\ONITwitchLib.csproj" />
     </ItemGroup>
     <ItemGroup>
-        <Reference Include="UnityEngine.InputLegacyModule">
-            <HintPath>$(LibFolder)/UnityEngine.InputLegacyModule.dll</HintPath>
-            <Private>false</Private>
-        </Reference>
-        <Reference Include="UnityEngine.TextRenderingModule">
-            <HintPath>$(LibFolder)/UnityEngine.TextRenderingModule.dll</HintPath>
-            <Private>false</Private>
-        </Reference>
-    </ItemGroup>
-    <ItemGroup>
         <EmbeddedResource Include="Resources\toast" />
         <EmbeddedResource Include="Resources\twitch_options" />
     </ItemGroup>
     <ItemGroup>
         <Content Remove="mod.yaml" />
         <Content Remove="mod_info.yaml" />
-    </ItemGroup>
-    <ItemGroup>
-      <PackageReference Include="PLib" Version="4.13.0" />
     </ItemGroup>
 </Project>
