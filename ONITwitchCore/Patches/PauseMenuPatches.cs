@@ -108,6 +108,12 @@ internal static class PauseMenuPatches {
 						lavrikoButtonStyle.hoverColor = HoverLavrikoColor;
 						lavrikoButtonStyle.activeColor = PressedLavrikoColor;
 
+						var texts = LavrikoButtonInfo.uibutton.GetComponentsInChildren<LocText>();
+						foreach (LocText locText in texts)
+						{
+							locText.color = new Color(0.426f, 0.224f, 0.157f);
+						}
+
 						LavrikoButtonInfo.uibutton.bgImage.colorStyleSetting = lavrikoButtonStyle;
 					}
 				}
