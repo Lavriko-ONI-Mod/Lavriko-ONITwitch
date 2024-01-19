@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using ONITwitch.DevTools.Panels;
 using ONITwitch.EventLib;
+using ONITwitchLib.Logger;
 using ONITwitchLib.Utils;
 using PeterHan.PLib.Core;
 using PeterHan.PLib.UI;
@@ -138,7 +140,14 @@ public class LavrikoPanel
                     content.AddChild(
                         pButton
                     );
-                    buttons.Add(eventName, pButton);
+                    try
+                    {
+                        buttons.Add(eventName, pButton);
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Warn($"{eventName}. :Event is duplicated");
+                    }
                 }
             }
         }

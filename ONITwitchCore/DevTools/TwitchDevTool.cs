@@ -8,8 +8,8 @@ using ONITwitch.DevTools.Panels;
 using ONITwitch.DonationAlerts;
 using ONITwitchLib;
 using ONITwitchLib.Utils;
-using PeterHan.PLib.Core;
-using PeterHan.PLib.UI;
+// using PeterHan.PLib.Core;
+// using PeterHan.PLib.UI;
 using STRINGS;
 using UnityEngine;
 using DataManager = ONITwitch.EventLib.DataManager;
@@ -130,6 +130,12 @@ internal class TwitchDevTool : DevTool
 					if (ImGui.Button("Start PLib UI"))
 					{
 						LavrikoPanel.Instance.Spawn();
+					}
+
+					if (DonationAlertsController.Instance.Container is not null)
+					{
+						ImGui.Text("DonAlerts Container exists");
+						ImGui.Text(DonationAlertsController.Instance.Container.LastCheckedAt.ToString());
 					}
 				}
 

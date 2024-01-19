@@ -24,9 +24,8 @@ internal class SpawnDupeCommand : CommandBase
 		return Components.MinionIdentities.Count < maxDupes;
 	}
 
-	public override void Run(object data)
+	public void Run(object data, string name)
 	{
-		string name = null;
 		Color? color = null;
 
 		var config = TwitchSettings.GetConfig();
@@ -85,6 +84,7 @@ internal class SpawnDupeCommand : CommandBase
 		minion.SetActive(true);
 
 		var identity = minion.GetComponent<MinionIdentity>();
+
 		if (name != null)
 		{
 			if (SpecialDupes.TryGetValue(name, out var specialDupeData))
@@ -138,6 +138,11 @@ internal class SpawnDupeCommand : CommandBase
 		);
 
 		Log.Info($"Spawned duplicant {identity.name}");
+	}
+
+	public override void Run(object data)
+	{
+		Run(data, null);
 	}
 
 	private record struct SpecialDupeData([NotNull] string PersonalityId);

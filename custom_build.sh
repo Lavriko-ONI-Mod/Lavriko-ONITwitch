@@ -24,6 +24,7 @@ fi
 
 echo "copying mod contents"
 cp ONITwitchCore/bin/Release/net471/* build/
+cp ../PLib/build/PLib.dll build/
 
 echo "copying mod.yaml and mod_info.yaml"
 cp ONITwitchCore/mod.yaml build/
@@ -40,7 +41,7 @@ echo "Build Done!"
 
 echo "ILRepacking now"
 
-IL_REPACK_VERSION='2.1.0-beta1'
+IL_REPACK_VERSION='2.0.27'
 
 IL_REPACK_PATH="$USERPROFILE\.nuget\packages\ilrepack\\$IL_REPACK_VERSION\tools\ILRepack.exe"
 
@@ -50,29 +51,30 @@ IL_REPACK_PATH="$USERPROFILE\.nuget\packages\ilrepack\\$IL_REPACK_VERSION\tools\
 # /lib is referenced assemblies (add game dlls here, so our mod can build)
 # all other parameters are dlls that we actually merge 
 
-#"$IL_REPACK_PATH" \
-#  /out:build/ONITwitch.dll \
-#  /lib:"C:\Users\Admin\Downloads\ONI 17.11.23\OxygenNotIncluded_Data\Managed" \
-#  build/ONITwitch.dll build/ONITwitchLib.dll build/PLib.dll
-#
-## shellcheck disable=SC2181
-#if [ $? -ne 0 ]; then
-#    echo ""
-#    echo "!ILRepack finished with error!"
-#    echo ""
-#    echo "Press any key to exit"
-#    read -n 1 -s
-#    exit 1
-#else
-#    echo ""
-#    echo "ILRepack SUCCEEDED"
-#    echo ""
-#fi
-#
-#echo "Removing source assemblies"
+"$IL_REPACK_PATH" \
+  /out:build/ONITwitch.dll \
+  /lib:"C:\Users\Admin\Downloads\ONI 17.11.23\OxygenNotIncluded_Data\Managed" \
+  build/ONITwitch.dll build/ONITwitchLib.dll build/PLib.dll
 
-#find build -type f -name '*.dll' ! -name 'ONITwitch.dll' -exec rm {} \;
-#rm build/*.xml
+# shellcheck disable=SC2181
+if [ $? -ne 0 ]; then
+    echo ""
+    echo "!ILRepack finished with error!"
+    echo ""
+    echo "Press any key to exit"
+    read -n 1 -s
+    exit 1
+else
+    echo ""
+    echo "ILRepack SUCCEEDED"
+    echo ""
+fi
+
+echo "Removing source assemblies"
+
+find build -type f -name '*.dll' ! -name 'ONITwitch.dll' -exec rm {} \;
+find build -type f -name '*.pdb' ! -name 'ONITwitch.pdb' -exec rm {} \;
+find build -type f -name '*.xml' ! -name 'ONITwitch.xml' -exec rm {} \;
 
 echo ""
 echo "Build SUCCEEDED!"
