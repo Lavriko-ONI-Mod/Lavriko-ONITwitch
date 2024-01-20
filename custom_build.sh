@@ -1,6 +1,44 @@
+if [ -f "ONIMods/build/PLib.dll" ]; then
+    echo "PLib is already built. Skipping build."
+    echo ""
+else
+    echo 'PLib is not built. Building now.'
+    echo ""
+    cd "ONIMods"
+    
+    # we need echo 1 so that close confirmation is automatically accepted
+    echo 1 | bash "custom_build.sh"
+    
+    # shellcheck disable=SC2181
+    if [ $? -ne 0 ]; then
+        echo ""
+        echo "!Building PLib failed!"
+        echo ""
+        echo "Press any key to exit"
+        read -n 1 -s
+        exit 1
+    fi
+    cd ../
+    echo ""
+    echo 'PLib is now built. Proceeding...'
+    echo ""
+fi
+
 echo "Building Lavriko Twitch"
 
-dotnet build --configuration Release --verbosity minimal --property:verbosity=minimal
+dotnet restore
+
+# shellcheck disable=SC2181
+if [ $? -ne 0 ]; then
+    echo ""
+    echo "!dotnet restore failed!"
+    echo ""
+    echo "Press any key to exit"
+    read -n 1 -s
+    exit 1
+fi
+
+dotnet build --configuration Release
 
 # shellcheck disable=SC2181
 if [ $? -ne 0 ]; then
@@ -24,7 +62,7 @@ fi
 
 echo "copying mod contents"
 cp ONITwitchCore/bin/Release/net471/* build/
-cp ../PLib/build/PLib.dll build/
+cp ../ONIMods/build/* build/
 
 echo "copying mod.yaml and mod_info.yaml"
 cp ONITwitchCore/mod.yaml build/

@@ -21,7 +21,4 @@
         <Content Remove="mod.yaml" />
         <Content Remove="mod_info.yaml" />
     </ItemGroup>
-    <ItemGroup>
-<!--      <PackageReference Include="PLib" Version="4.13.0" />-->
-    </ItemGroup>
 </Project>

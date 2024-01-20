@@ -1,0 +1,4 @@
+[submodule "ONIMods"]
+	path = ONIMods
+	url = git@github.com:Lavriko-ONI-Mod/ONIMods.git
+	branch = lavriko

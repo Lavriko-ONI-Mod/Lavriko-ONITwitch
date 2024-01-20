@@ -90,7 +90,7 @@
             <Private>false</Private>
         </Reference>
         <Reference Include="PLib">
-            <HintPath>../../PLib/build/PLib.dll</HintPath>
+            <HintPath>../ONIMods/build/PLib.dll</HintPath>
             <Private>false</Private>
         </Reference>
     </ItemGroup>
