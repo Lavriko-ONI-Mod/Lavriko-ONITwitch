@@ -116,6 +116,24 @@ internal static class STRINGS
 				}
 			}
 		}
+
+		public static class PERSONALITIES
+		{
+			public static class DONATED_DUPE_STANDART
+			{
+				public static readonly LocString DESC = "Donated dupe";
+			}
+
+			public static class DONATED_DUPE_IMMORTAL
+			{
+				public static readonly LocString DESC = "Donated dupe";
+			}
+
+			public static class DONATED_DUPE_VIP
+			{
+				public static readonly LocString DESC = "Donated dupe";
+			}
+		}
 	}
 
 	public static class ELEMENTS

@@ -31,15 +31,15 @@ public class DonationAlertsContainer
                 if (donation is not null)
                 {
                     OnDonation?.Invoke(donation);
-                    MessageBox.Show(
-                        "Донат!\n" +
-                        $"Отправитель: {donation.Sender}\n" +
-                        $"Сумма (ориг): {donation.AmountSource}\n" +
-                        $"Валюта: {donation.Currency}\n" +
-                        $"Сумма (руб): {donation.AmountInMyCurrency}\n" +
-                        $"Тип: {donation.Type}\n" +
-                        $"Создано: {donation.CreatedAt}\n"
-                    );
+                    // MessageBox.Show(
+                    //     "Донат!\n" +
+                    //     $"Отправитель: {donation.Sender}\n" +
+                    //     $"Сумма (ориг): {donation.AmountSource}\n" +
+                    //     $"Валюта: {donation.Currency}\n" +
+                    //     $"Сумма (руб): {donation.AmountInMyCurrency}\n" +
+                    //     $"Тип: {donation.Type}\n" +
+                    //     $"Создано: {donation.CreatedAt}\n"
+                    // );
                 }
 
                 LastCheckedAt = System.DateTime.Now;
