@@ -14,7 +14,7 @@ namespace ONITwitch.DevTools;
 
 public static class Extensions
 {
-    public static HashSet<string> Flatten(this List<(string Namespace, List<(string GroupName, List<EventInfo> Events)> GroupedEvents)> entries)
+    public static HashSet<string> ToHashset(this List<(string Namespace, List<(string GroupName, List<EventInfo> Events)> GroupedEvents)> entries)
     {
         var names = new HashSet<string>();
         foreach (var (eventNamespace, groups) in entries)
@@ -88,7 +88,7 @@ public class LavrikoPanel
                 OnValueChanged = (_, text) =>
                 {
                     _currentFilter = text;
-                    var foundEntries = EventsPanel.GenerateEventEntries(text).Flatten();
+                    var foundEntries = EventsPanel.GenerateEventEntries(text).ToHashset();
                     foreach (var key in _builtButtons.Keys)
                     {
                         _builtButtons[key]

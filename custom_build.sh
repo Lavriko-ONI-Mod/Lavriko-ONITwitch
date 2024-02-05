@@ -62,7 +62,7 @@ fi
 
 echo "copying mod contents"
 cp ONITwitchCore/bin/Release/net471/* build/
-cp ../ONIMods/build/* build/
+cp ONIMods/build/* build/
 
 echo "copying mod.yaml and mod_info.yaml"
 cp ONITwitchCore/mod.yaml build/

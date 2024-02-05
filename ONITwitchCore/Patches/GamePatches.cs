@@ -1,6 +1,7 @@
 using HarmonyLib;
 using JetBrains.Annotations;
 using ONITwitch.Content.Cmps;
+using ONITwitch.DonationAlerts;
 using ONITwitch.Voting;
 
 namespace ONITwitch.Patches;
@@ -16,6 +17,7 @@ internal static class GamePatches
 		private static void Postfix(Game __instance)
 		{
 			__instance.gameObject.AddOrGet<OniTwitchEclipse>();
+			DonationAlertsController.Instance.Connect();
 		}
 	}
 

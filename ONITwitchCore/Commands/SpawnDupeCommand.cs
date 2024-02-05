@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Database;
 using JetBrains.Annotations;
 using ONITwitch.Settings.Components;
 using ONITwitch.Toasts;
@@ -24,9 +25,42 @@ internal class SpawnDupeCommand : CommandBase
 		return Components.MinionIdentities.Count < maxDupes;
 	}
 
-	public void Run(object data, string name)
+	public override void Run(object data)
 	{
+		var param = (Dictionary<string, object>) data;
 		Color? color = null;
+		string name = null;
+		bool isDonatingStandart = false;
+		bool isDonatingImmortal = false;
+		bool isDonatingVIP = false;
+		if (param.TryGetValue("name", out var nameObj))
+		{
+			name = (string)nameObj;
+		}
+		if (param.TryGetValue("isDonatingStandart", out _))
+		{
+			isDonatingStandart = true;
+			if (ColorUtil.TryParseHexString("fefe2b", out var colorParse))
+			{
+				color = colorParse;
+			}
+		}
+		if (param.TryGetValue("isDonatingImmortal", out _))
+		{
+			isDonatingImmortal = true;
+			if (ColorUtil.TryParseHexString("33a713", out var colorParse))
+			{
+				color = colorParse;
+			}
+		}
+		if (param.TryGetValue("isDonatingVIP", out _))
+		{
+			isDonatingVIP = true;
+			if (ColorUtil.TryParseHexString("ff0000", out var colorParse))
+			{
+				color = colorParse;
+			}
+		}
 
 		var config = TwitchSettings.GetConfig();
 
@@ -96,7 +130,22 @@ internal class SpawnDupeCommand : CommandBase
 			}
 			else
 			{
-				new MinionStartingStats(false).Apply(minion);
+				if (isDonatingStandart)
+				{
+					ApplyMinionPersonality("donated_dupe_standart", minion);
+				}
+				else if (isDonatingImmortal)
+				{
+					ApplyMinionPersonality("donated_dupe_immortal", minion);
+				}
+				else if (isDonatingVIP)
+				{
+					ApplyMinionPersonality("donated_dupe_vip", minion);
+				}
+				else
+				{
+					new MinionStartingStats(false).Apply(minion);
+				}
 			}
 
 			var finalColor = color ?? ColorUtil.GetRandomTwitchColor();
@@ -140,9 +189,19 @@ internal class SpawnDupeCommand : CommandBase
 		Log.Info($"Spawned duplicant {identity.name}");
 	}
 
-	public override void Run(object data)
+	private static void ApplyMinionPersonality(string key, GameObject minion)
 	{
-		Run(data, null);
+		var pers = Db.Get()
+			.Personalities.GetPersonalityFromNameStringKey(key);
+
+		if (pers is null)
+		{
+			// don't get from Db, we need a copy
+			pers = new Personalities().GetRandom(true, false);
+			pers.nameStringKey = key;
+			Db.Get().Personalities.Add(pers);
+		}
+		new MinionStartingStats(pers).Apply(minion);
 	}
 
 	private record struct SpecialDupeData([NotNull] string PersonalityId);
