@@ -10,13 +10,16 @@ public class DonationAlertsContainer
     public System.DateTime LastCheckedAt { get; private set; }
 
     public event Action<DonationExportDto> OnDonation;
+    public event System.Action OnStopped;
+    
+    private bool shouldStop = false;
 
     public async Task Start()
     {
         WebClient webClient = new();
         var failsInARow = 0;
         var lastError = "";
-        while (true)
+        while (!shouldStop)
         {
             if (failsInARow >= 5)
             {
@@ -31,15 +34,6 @@ public class DonationAlertsContainer
                 if (donation is not null)
                 {
                     OnDonation?.Invoke(donation);
-                    // MessageBox.Show(
-                    //     "Донат!\n" +
-                    //     $"Отправитель: {donation.Sender}\n" +
-                    //     $"Сумма (ориг): {donation.AmountSource}\n" +
-                    //     $"Валюта: {donation.Currency}\n" +
-                    //     $"Сумма (руб): {donation.AmountInMyCurrency}\n" +
-                    //     $"Тип: {donation.Type}\n" +
-                    //     $"Создано: {donation.CreatedAt}\n"
-                    // );
                 }
 
                 LastCheckedAt = System.DateTime.Now;
@@ -51,5 +45,12 @@ public class DonationAlertsContainer
                 failsInARow++;
             }
         }
+
+        OnStopped?.Invoke();
+    }
+
+    public void Disconnect()
+    {
+        shouldStop = true;
     }
 }

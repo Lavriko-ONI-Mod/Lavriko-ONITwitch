@@ -32,6 +32,11 @@ internal static class GamePatches
 			{
 				VoteController.Instance.Stop();
 			}
+
+			if (DonationAlertsController.Instance != null)
+			{
+				DonationAlertsController.Instance.Disconnect();
+			}
 		}
 	}
 }

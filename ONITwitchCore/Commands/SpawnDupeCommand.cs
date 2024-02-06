@@ -2,13 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Database;
+using HarmonyLib;
 using JetBrains.Annotations;
-using ONITwitch.Settings.Components;
+using Klei.AI;
+using ONITwitch.Content;
+using ONITwitch.DonationAlerts;
 using ONITwitch.Toasts;
 using ONITwitch.Voting;
+using ONITwitchLib.Core;
 using ONITwitchLib.Logger;
 using ONITwitchLib.Utils;
 using UnityEngine;
+using Attributes = Database.Attributes;
+using TwitchSettings = ONITwitch.Settings.Components.TwitchSettings;
 
 namespace ONITwitch.Commands;
 
@@ -30,16 +36,13 @@ internal class SpawnDupeCommand : CommandBase
 		var param = (Dictionary<string, object>) data;
 		Color? color = null;
 		string name = null;
-		bool isDonatingStandart = false;
-		bool isDonatingImmortal = false;
-		bool isDonatingVIP = false;
+		bool isDev = false;
 		if (param.TryGetValue("name", out var nameObj))
 		{
 			name = (string)nameObj;
 		}
 		if (param.TryGetValue("isDonatingStandart", out _))
 		{
-			isDonatingStandart = true;
 			if (ColorUtil.TryParseHexString("fefe2b", out var colorParse))
 			{
 				color = colorParse;
@@ -47,7 +50,6 @@ internal class SpawnDupeCommand : CommandBase
 		}
 		if (param.TryGetValue("isDonatingImmortal", out _))
 		{
-			isDonatingImmortal = true;
 			if (ColorUtil.TryParseHexString("33a713", out var colorParse))
 			{
 				color = colorParse;
@@ -55,11 +57,21 @@ internal class SpawnDupeCommand : CommandBase
 		}
 		if (param.TryGetValue("isDonatingVIP", out _))
 		{
-			isDonatingVIP = true;
 			if (ColorUtil.TryParseHexString("ff0000", out var colorParse))
 			{
 				color = colorParse;
 			}
+		}
+		if (param.TryGetValue("isDev", out _))
+		{
+			color = Color.yellow;
+			isDev = true;
+		}
+
+		if (isDev && Components.LiveMinionIdentities.Any(x => x.name == "bird_egop"))
+		{
+			MessageBox.Show("Dev is already present");
+			return;
 		}
 
 		var config = TwitchSettings.GetConfig();
@@ -130,28 +142,13 @@ internal class SpawnDupeCommand : CommandBase
 			}
 			else
 			{
-				if (isDonatingStandart)
-				{
-					ApplyMinionPersonality("donated_dupe_standart", minion);
-				}
-				else if (isDonatingImmortal)
-				{
-					ApplyMinionPersonality("donated_dupe_immortal", minion);
-				}
-				else if (isDonatingVIP)
-				{
-					ApplyMinionPersonality("donated_dupe_vip", minion);
-				}
-				else
-				{
-					new MinionStartingStats(false).Apply(minion);
-				}
+				new MinionStartingStats(false).Apply(minion);
 			}
 
 			var finalColor = color ?? ColorUtil.GetRandomTwitchColor();
 			identity.SetName(
 				config.UseTwitchNameColors
-					? $"<color=#{finalColor.ToHexString()}>{name}</color>"
+					? $"<color=#{finalColor.ToHexString()}>{name}"
 					: name
 			);
 		}
@@ -161,6 +158,38 @@ internal class SpawnDupeCommand : CommandBase
 		}
 
 		identity.GetComponent<MinionResume>().ForceAddSkillPoint();
+
+		if (isDev)
+		{
+			var effect = Db.Get().effects.TryGet(CustomEffects.NoOxygenConsumeEffect.Id);
+			if (minion.TryGetComponent<Effects>(out var effects))
+			{
+				effects.Add(effect, true);
+				MessageBox.Show("Dupe will not consume oxygen");
+			}
+		}
+
+		var handler = GameUtil.CreateHasTagHandler<MinionIdentity>(GameTags.Dead, (component, data) =>
+		{
+			try
+			{
+				Components.MinionIdentities.Remove(component);
+				var proxies = Components.MinionAssignablesProxy.Where(x => x == component.assignableProxy.Get())
+					.ToList();
+				foreach (var proxy in proxies)
+				{
+					Components.MinionAssignablesProxy.Remove(proxy);
+				}
+
+				MessageBox.Show($"{component.name} УМЕР!");
+			}
+			catch
+			{
+				MessageBox.Show($"{component.name} УМЕР!\nНе удалось очистить двери(");
+			}
+		});
+		
+		GameUtil.SubscribeToTags(identity, handler, true);
 
 		Vector3 pos;
 		// First try to find a printing pod, since that should always be in a safe location.

@@ -19,6 +19,7 @@ public class DonationAlertsConnection
     public string AccessToken { get; private set; }
 
     public event Action<DonationExportDto> OnDonation;
+    public event System.Action OnStopped;
 
     public void Start()
     {
@@ -51,6 +52,7 @@ public class DonationAlertsConnection
                         {
                             _container = new DonationAlertsContainer();
                             _container.OnDonation += OnDonation;
+                            _container.OnStopped += OnStopped;
                             Task.Run(async () => await _container.Start());
                         }
                         catch (Exception ex)
@@ -66,5 +68,10 @@ public class DonationAlertsConnection
                     }
                 }
             );
+    }
+
+    public void Disconnect()
+    {
+        _container?.Disconnect();
     }
 }
