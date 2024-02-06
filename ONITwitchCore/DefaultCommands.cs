@@ -22,7 +22,7 @@ internal static class DefaultCommands
 				"SpawnDupe",
 				STRINGS.ONITWITCH.EVENTS.SPAWN_DUPE,
 				new SpawnDupeCommand(),
-				new Dictionary<string, object> { { "MaxDupes", 30.0d } },
+				new Dictionary<string, object> { { "MaxDupes", 50.0d } },
 				Danger.Small,
 				EventWeight.Frequent
 			)

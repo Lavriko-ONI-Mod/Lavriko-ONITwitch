@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using Klei.AI;
 using ONITwitchLib;
+using Attributes = Database.Attributes;
 
 namespace ONITwitch.Content;
 
@@ -128,6 +129,19 @@ public static class CustomEffects
 		custom_icon: "status_item_exhausted"
 	);
 
+	/// <summary>
+	/// An effect that makes duplicant not consume oxygen.
+	/// </summary>
+	[PublicAPI] public static readonly Effect NoOxygenConsumeEffect = new(
+		TwitchModInfo.ModPrefix + "NoOxygenConsumeEffect",
+		STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.NO_OXYGEN_CONSUME.NAME,
+		STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.NO_OXYGEN_CONSUME.TOOLTIP,
+		10000 * Constants.SECONDS_PER_CYCLE,
+		true,
+		true,
+		false
+	);
+
 	internal static void SetupEffects()
 	{
 		var effects = Db.Get().effects;
@@ -157,5 +171,21 @@ public static class CustomEffects
 			)
 		);
 		effects.Add(SleepyEffect);
+		
+		// NoOxygenConsumeEffect.Add(
+		// 	new AttributeModifier(
+		// 		attributes.AirConsumptionRate.Id,
+		// 		-0.001f,
+		// 		STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.NO_OXYGEN_CONSUME.TOOLTIP
+		// 	)
+		// );
+		NoOxygenConsumeEffect.Add(
+			new AttributeModifier(
+				attributes.Get("BreathMin").Id,
+				100f,
+				STRINGS.DUPLICANTS.MODIFIERS.ONITWITCH.NO_OXYGEN_CONSUME.TOOLTIP
+			)
+		);
+		effects.Add(NoOxygenConsumeEffect);
 	}
 }

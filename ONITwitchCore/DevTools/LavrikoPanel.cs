@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ONITwitch.Commands;
 using ONITwitch.DevTools.Panels;
 using ONITwitch.EventLib;
 using ONITwitchLib.Logger;
@@ -64,12 +65,6 @@ public class LavrikoPanel
                 "Ok",
                 "Ok",
                 PUITuning.Colors.ButtonPinkStyle
-            )
-            .AddButton(
-                PDialog.DIALOG_KEY_CLOSE,
-                PLibStrings.TOOLTIP_CANCEL,
-                PLibStrings.TOOLTIP_CANCEL,
-                PUITuning.Colors.ButtonBlueStyle
             );
 
         var content = new PPanel()
@@ -94,6 +89,56 @@ public class LavrikoPanel
                         _builtButtons[key]
                             .SetActive(foundEntries.Contains(key));
                     }
+                }
+            }
+        );
+
+        content.AddChild(
+            new PButton()
+            {
+                Text = "Заспавнить разработчика",
+                TextAlignment = TextAnchor.MiddleLeft,
+                FlexSize = new Vector2(1, 0),
+                OnClick = _ =>
+                {
+                    GameScheduler.Instance.Schedule(
+                        "spawn_mod_dev",
+                        0,
+                        _ =>
+                        {
+                            var eventData = new Dictionary<string, object>()
+                            {
+                                ["name"] = "bird_egop",
+                                ["isDev"] = true
+                            };
+                            new SpawnDupeCommand().Run(eventData);
+                        }
+                    );
+                }
+            }
+        ); 
+        
+        content.AddChild(
+            new PButton()
+            {
+                Text = "Оживить дубля",
+                TextAlignment = TextAnchor.MiddleLeft,
+                FlexSize = new Vector2(1, 0),
+                OnClick = _ =>
+                {
+                    GameScheduler.Instance.Schedule(
+                        "revive_dupe",
+                        0,
+                        _ =>
+                        {
+                            var eventData = new Dictionary<string, object>()
+                            {
+                                ["name"] = "bird_egop",
+                                ["isDev"] = true
+                            };
+                            new SpawnDupeCommand().Run(eventData);
+                        }
+                    );
                 }
             }
         );

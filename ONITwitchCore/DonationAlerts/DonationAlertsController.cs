@@ -33,6 +33,16 @@ public class DonationAlertsController : KMonoBehaviour
         connection = new DonationAlertsConnection();
 
         connection.OnDonation += OnDonation;
+        connection.OnStopped += OnStopped;
+    }
+
+    private void OnStopped()
+    {
+        connection.OnStopped -= OnStopped;
+        connection.OnDonation -= OnDonation;
+        connection = new DonationAlertsConnection();
+        connection.OnDonation += OnDonation;
+        connection.OnStopped += OnStopped;
     }
 
     private void OnDonation(DonationExportDto data)
@@ -489,5 +499,9 @@ public class DonationAlertsController : KMonoBehaviour
     public void Connect()
     {
         connection.Start();
+    }
+    public void Disconnect()
+    {
+        connection?.Disconnect();
     }
 }

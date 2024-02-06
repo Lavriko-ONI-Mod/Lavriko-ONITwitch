@@ -103,6 +103,12 @@ internal static class STRINGS
 					public static readonly LocString TOOLTIP = "Incredibly Exhausted";
 				}
 
+				public static class NO_OXYGEN_CONSUME
+				{
+					public static readonly LocString NAME = "No oxygen consume";
+					public static readonly LocString TOOLTIP = "Dupe doesn't consume oxygen";
+				}
+
 				public static class STRENGTH_UP
 				{
 					public static readonly LocString NAME = "Strength Up";
